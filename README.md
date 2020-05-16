@@ -1,8 +1,8 @@
 #### Updating Site
 
-Make changes within src folder
-Build and test in localhost
-Push all changes to github
+- Make changes within src folder
+- Build and test in localhost
+- Push all changes to github
 
 #### npm Scripts
 
