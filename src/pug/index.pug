@@ -38,7 +38,7 @@ html(lang='en')
       meta(name='author' content='Sabarish Raghupathy')
 
       // Favicon
-      link(rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.png')
+      link(rel='shortcut icon' type='image/x-icon' href='dist/assets/images/favicon.png')
       
       link(rel='index' title='Sabarish' href='http://sabarish.net')
       title Sabarish | UX/UI Portfolio
@@ -61,6 +61,8 @@ html(lang='en')
         script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
         script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     
+      //Lazysizes image load
+      script(src='dist/assets/vendor/lazysites/lazysizes.min.js' async='')
     body#page-top.index
         // Google Tag Manager (noscript)
         noscript
@@ -446,7 +448,7 @@ html(lang='en')
                       | constantly evolving and headed to a future of seamless experiences for patrons. The new
                       | Library App and updated Library Website are two significant steps on this journey.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_home.jpg' alt='Library Website Homepage')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_home.jpg' alt='Library Website Homepage')
                     h4.text-center.color-gray-darker
                       | New Gottesman Libraries homepage 
                       i.fa.fa-chevron-up
@@ -458,7 +460,7 @@ html(lang='en')
                       | various library services and resources. Also update the various sub-systems and
                       | integrated systems.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_web_old.jpg' alt='Old Library Website Home')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_old.jpg' alt='Old Library Website Home')
                     h4.text-center
                       | Old Gottesman Libraries homepage 
                       i.fa.fa-chevron-up
@@ -530,7 +532,7 @@ html(lang='en')
                       blockquote
                         i There is too much going on throughout the site!
                       br
-                      img.img-responsive.img-centered(src='dist/assets/images/work/lib_links.jpg' alt='Library App Home Screen')
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_links.jpg' alt='Library App Home Screen')
                       h4.text-center
                         | Too many links 
                         i.fa.fa-chevron-up
@@ -538,7 +540,7 @@ html(lang='en')
                       li Did a comparative analysis of other library websites and apps.
                       li Evaluated the existing website and Google Analytics data.
                       br
-                      img.img-responsive.img-centered(src='dist/assets/images/work/lib_clicks.jpg' alt='Library App Home Screen')
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_clicks.jpg' alt='Library App Home Screen')
                       h4.text-center
                         | What 90% of the visitors want 
                         i.fa.fa-chevron-up
@@ -586,7 +588,7 @@ html(lang='en')
                         b The Librarian, who supports the above two users and their requests.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_role_model.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_role_model.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | User &amp; Task model 
                       i.fa.fa-chevron-up
@@ -625,9 +627,9 @@ html(lang='en')
                       br
                       br
                   .col-lg-6
-                    img.img-responsive.img-centered(src='dist/assets/images/work/library_home_2.png' alt='Old Library Website Home')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/library_home_2.jpg' alt='Old Library Website Home')
                   .col-lg-6
-                    img.img-responsive.img-centered(src='dist/assets/images/work/library_home_3.png' alt='Library Website Home')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/library_home_3.jpg' alt='Library Website Home')
                   .col-lg-8.col-lg-offset-2
                     h4.text-center
                       | Other homepage wireframe options 
@@ -688,7 +690,7 @@ html(lang='en')
                       | As the lead user experience designer, I was responsible for the complete creative
                       | direction of the project, from conception and research to design and implementation.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app.jpg' alt='Library App Home and More')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app.jpg' alt='Library App Home and More')
                     h4.text-center
                       | New Library Mobile App 
                       i.fa.fa-chevron-up
@@ -720,13 +722,13 @@ html(lang='en')
                       | &#x279D; 
                       b Use Cases and User Flows: 
                     ul
-                      li A lot of our research and ideas came from the
+                      li A lot of our research and ideas came from the 
                         a(href='https://www.sabarish.net/#modalLibWeb') library website project
                       li Stakeholders and patrons had given their expectations from a mobile app.
                       li Created multiple use cases and detailed them out as shown below -
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_usecase_1.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_usecase_1.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | How to locate a book in the stacks use case 
                       i.fa.fa-chevron-up
@@ -735,7 +737,7 @@ html(lang='en')
                     p.color-blue
                       | &#x279D; 
                       b Information Architecture 
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_ia.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_ia.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | App Screens / Architecture 
                       i.fa.fa-chevron-up
@@ -748,7 +750,7 @@ html(lang='en')
                       li
                         | I designed multiple wireframes detailing based on the use cases that were developed.
                   .col-lg-8.col-lg-offset-2
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_shelf_1.jpg' alt='Library App My Shelf')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_shelf_1.jpg' alt='Library App My Shelf')
                     h4.text-center
                       | Early mockups of &apos;My Items&apos; 
                       i.fa.fa-chevron-up
@@ -764,14 +766,14 @@ html(lang='en')
                         | options for that view.
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_wires.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_wires.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | Single Book Wireframe 
                       i.fa.fa-chevron-up
                     br
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_singlepage.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_singlepage.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | Single Page Options 
                       i.fa.fa-chevron-up
@@ -781,7 +783,7 @@ html(lang='en')
                       li
                         | A new feature of the app was a room reservation system.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/lib_app_roomflow.jpg' alt='Library App Home Screen')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_roomflow.jpg' alt='Library App Home Screen')
                     h4.text-center
                       | Room Reservation Flow 
                       i.fa.fa-chevron-up
@@ -825,7 +827,7 @@ html(lang='en')
                       | improve the user experience across a range of features within JLR automobiles, centered
                       | on the In-Vehicle Infotainment (IVI) system.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/jlr_center.jpg' alt='JLR testing')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_center.jpg' alt='JLR testing')
                     h4.text-center.color-gray-darker
                       | Testing setup at JLR&apos;s Portland research center 
                       i.fa.fa-chevron-up
@@ -901,7 +903,7 @@ html(lang='en')
                         | and high fidelity visual designs.
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/jlr_designthink.jpg' alt='JLR testing')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_designthink.jpg' alt='JLR testing')
                     h4.text-center
                       | Design Thinking Sessions 
                       i.fa.fa-chevron-up
@@ -957,7 +959,7 @@ html(lang='en')
                         | cameras.
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/jlr_racetrack.jpg' alt='JLR testing')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_racetrack.jpg' alt='JLR testing')
                     h4.text-center
                       | Talking to racers 
                       i.fa.fa-chevron-up
@@ -982,7 +984,7 @@ html(lang='en')
                       li
                         | We created detailed scenarios for different use cases and reviewed them regularly
                         | with the clients.
-                    img.img-responsive.img-centered(src='dist/assets/images/work/jlr_flow.jpg' alt='JLR testing')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_flow.jpg' alt='JLR testing')
                     h4.text-center
                       | An Example Use Case Interaction Flow 
                       i.fa.fa-chevron-up
@@ -1001,7 +1003,7 @@ html(lang='en')
                         | Users were able to select items on the vehicle touchscreen and interact with the
                         | system&rsquo;s concepts.
                 .col-lg-6.col-lg-offset-3
-                  img.img-responsive.img-centered(src='dist/assets/images/work/jlr_testing.jpg' alt='JLR testing')
+                  img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_testing.jpg' alt='JLR testing')
                   h4.text-center
                     | User Testing our interactive prototypes 
                     i.fa.fa-chevron-up
@@ -1132,7 +1134,7 @@ html(lang='en')
                       li Integrate with phone sensors
                       li Integrate with mobile phone apps
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/orion_flow.jpg' alt='Orion Use Case Flow')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/orion_flow.jpg' alt='Orion Use Case Flow')
                     h4.text-center
                       | Scenario: Sync with driver phone
                       i.fa.fa-chevron-up
@@ -1146,7 +1148,7 @@ html(lang='en')
                       | system, location sensors, steering wheel, different IVI apps, and up to four mobile
                       | phones.
                     .text-center
-                      iframe(width='560' height='315' src='https://www.youtube.com/embed/jTBsEIZGcak' frameborder='0' allowfullscreen='')
+                      iframe.lazyload(width='560' height='315' frameborder='0' allowfullscreen='' data-src='//www.youtube.com/embed/jTBsEIZGcak')
                     h4.text-center
                       | Intel demoing the IVI system 
                       i.fa.fa-chevron-up
@@ -1172,21 +1174,21 @@ html(lang='en')
                       | &#x279D; 
                       b Interactive Web Apps:
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/intel_iot-kit.jpg' alt='Intel IoT Kit')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/intel_iot-kit.jpg' alt='Intel IoT Kit')
                     h4.text-center
                       | &apos;Demo experience kit&apos; for Intel&apos;s Starter IoT Kit 
                       i.fa.fa-chevron-up
                     br                    
-                    img.img-responsive.img-centered(src='dist/assets/images/work/intel_iot_truck.jpg' alt='Web Apps for Intel IoT')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/intel_iot_truck.jpg' alt='Web Apps for Intel IoT')
                     br
                     blockquote
                       i
                         | Example use case - IoT integration with a delivery truck, to monitor
                         | temperature, vibration, location, door open/close status, etc.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/intel_iot_trucks.jpg' alt='Web Apps for Intel IoT')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/intel_iot_trucks.jpg' alt='Web Apps for Intel IoT')
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/intel_iot_tower.jpg' alt='Web Apps for Intel IoT')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/intel_iot_tower.jpg' alt='Web Apps for Intel IoT')
                     h4.text-center
                       | Web apps for different IoT use cases 
                       i.fa.fa-chevron-up
@@ -1211,7 +1213,7 @@ html(lang='en')
                         | Wireframes exploring elements of the user experience for each concept were created
                         | and tested with users.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/intel_ta.jpg' alt='Intel TA')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/intel_ta.jpg' alt='Intel TA')
                     h4.text-center
                       | Intel Technology Access 
                       i.fa.fa-chevron-up
@@ -1253,7 +1255,7 @@ html(lang='en')
                       | Rhizr is a collection of learning opportunities linked together to
                       | support serendipitous discovery. Use it to create, organize, reuse, and remix content.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_home.jpg' alt='Rhizr View')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_home.jpg' alt='Rhizr View')
                     h4.text-center.color-gray-darker
                       | Responsive Rhizr Designs 
                       i.fa.fa-chevron-up
@@ -1334,7 +1336,7 @@ html(lang='en')
                         | knowledge about the content and to practice using it&quot; - Dean A. McManus
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_about.jpg' alt='Rhizr View')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_about.jpg' alt='Rhizr View')
                     h4.text-center
                       | Concept of Rhizr 
                       i.fa.fa-chevron-up
@@ -1355,7 +1357,7 @@ html(lang='en')
                         | creator, the passive learner, and the active learner.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_userroles.jpg' alt='Rhizr User Model')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_userroles.jpg' alt='Rhizr User Model')
                     h4.text-center
                       | New user models 
                       i.fa.fa-chevron-up
@@ -1368,7 +1370,7 @@ html(lang='en')
                       li I mapped out user needs and goals and created task flows.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_createflow.jpg' alt='Rhizr User Flow')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_createflow.jpg' alt='Rhizr User Flow')
                     h4.text-center
                       | A Task flow - Creating a new Rhizr 
                       i.fa.fa-chevron-up
@@ -1386,7 +1388,7 @@ html(lang='en')
                         | various grid and canvas layouts, before we settled on the simple column layout.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_view.jpg' alt='Rhizr View')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_view.jpg' alt='Rhizr View')
                     h4.text-center
                       | Wireframe of a Rhizr with Nodes and Roots 
                       i.fa.fa-chevron-up
@@ -1419,7 +1421,7 @@ html(lang='en')
                           | and the functionality is also not very intuitive.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/rhizr_rhizr.jpg' alt='Rhizr View')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_rhizr.jpg' alt='Rhizr View')
                     h4.text-center
                       | Viewing a &apos;Rhizr&apos; 
                       i.fa.fa-chevron-up
@@ -1460,7 +1462,7 @@ html(lang='en')
                     p.project-intro
                       | &quot;Vialogues&quot;, deriving from video + dialogues, is a community of
                       | learners using video to ignite discussion.
-                    img.img-responsive.img-centered(src='dist/assets/images/work/vialogues_home_new.jpg' alt='Vialogues new landing page')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/vialogues_home_new.jpg' alt='Vialogues new landing page')
                     h4.text-center.color-gray-darker
                       | NEW RESPONSIVE SITE 
                       i.fa.fa-chevron-up
@@ -1473,7 +1475,7 @@ html(lang='en')
                       | been a desperate need for an upgrade and constant demand for additional features and an
                       | easier to use interface.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/vialogues_home_old.jpg' alt='Vialogues old landing page')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/vialogues_home_old.jpg' alt='Vialogues old landing page')
                     h4.text-center
                       | Old Vialogues Homepage 
                       i.fa.fa-chevron-up
@@ -1610,7 +1612,7 @@ html(lang='en')
                             | Management, User Setting, Access, Commenting, etc.)
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/via_old-play.jpg' alt='Vialogues Play Page')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/via_old-play.jpg' alt='Vialogues Play Page')
                     h4.text-center
                       | Old Vialogues Play Page 
                       i.fa.fa-chevron-up
@@ -1634,12 +1636,12 @@ html(lang='en')
                       li We extensively used InVision app to create, share, and test our prototypes.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/vialogues_search.jpg' alt='Rhizr responsive')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/vialogues_search.jpg' alt='Rhizr responsive')
                     h4.text-center
                       | Improved Search Results 
                       i.fa.fa-chevron-up
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/vialogues_play-page.jpg' alt='Vialogues Play Page')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/vialogues_play-page.jpg' alt='Vialogues Play Page')
                     h4.text-center
                       | New Vialogues Play Page 
                       i.fa.fa-chevron-up
@@ -1682,7 +1684,7 @@ html(lang='en')
                       | College, Columbia University working on the future of education technology, but they had
                       | a website that was stuck in the early 2000s.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/edlab_website_new.jpg' alt='New EdLab Website')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/edlab_website_new.jpg' alt='New EdLab Website')
                     h4.text-center.color-gray-darker
                       | New Responsive Site 
                       i.fa.fa-chevron-up
@@ -1768,7 +1770,7 @@ html(lang='en')
                         | Eventually, the scope expanded to build a completely new website with new
                         | requirements and features.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/edlab_website_old.jpg' alt='Old EdLab website')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/edlab_website_old.jpg' alt='Old EdLab website')
                     h4.text-center
                       | The Old Homepage 
                       i.fa.fa-chevron-up
@@ -1833,7 +1835,7 @@ html(lang='en')
                             | we can do, we wanted to tell them a little more about us in this section.
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/edlab_website_ia.jpg' alt='New site structure')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/edlab_website_ia.jpg' alt='New site structure')
                     h4.text-center
                       | New site structure 
                       i.fa.fa-chevron-up
@@ -1854,7 +1856,7 @@ html(lang='en')
                       li Our later design iterations were more simple and clean.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/edlab-website_v1.jpg' alt='Early visual design')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/edlab-website_v1.jpg' alt='Early visual design')
                     h4.text-center
                       | Early visual design option 
                       i.fa.fa-chevron-up
@@ -1912,7 +1914,7 @@ html(lang='en')
                       | and decluttering the landing page to enhance the shopping experience for visitors to the
                       | site.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/dell_final.jpg' alt='New dell.com')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_final.jpg' alt='New dell.com')
                     h4.text-center.color-gray-darker
                       | New simplified homepage navigation
                       i.fa.fa-chevron-up
@@ -1926,7 +1928,7 @@ html(lang='en')
                       | (monthly) visitors on dell.com, by reducing the segments on Dell&apos;s main homepage from
                       | five to two (&apos;For Home&apos; and &apos;For Work&apos;).
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/dell_home_old.jpg' alt='Old dell.com')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_home_old.jpg' alt='Old dell.com')
                     h4.text-center
                       | Old landing page and its many segments 
                       i.fa.fa-chevron-up
@@ -2007,7 +2009,7 @@ html(lang='en')
                         |  - allow users to shop by &apos;Brands&apos; (ex:
                         |                                     Latitude or Alienware) or &apos;Activity&apos; (ex: Gaming).
                       br
-                      img.img-responsive.img-centered(src='dist/assets/images/work/dell_consolidated.jpg' alt='Initial Dell design')
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_consolidated.jpg' alt='Initial Dell design')
                       h4.text-center
                         | Initial design 
                         i.fa.fa-chevron-up
@@ -2020,17 +2022,17 @@ html(lang='en')
                         |                                     segments will work best:
                         br
                         br
-                        img.img-responsive.img-centered(src='dist/assets/images/work/dell_option_1.jpg' alt='OPTION 1')
+                        img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_1.jpg' alt='OPTION 1')
                         h4.text-center
                           | OPTION 1: Single segment 
                           i.fa.fa-chevron-up
                         br
-                        img.img-responsive.img-centered(src='dist/assets/images/work/dell_option_2.jpg' alt='OPTION 2')
+                        img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_2.jpg' alt='OPTION 2')
                         h4.text-center
                           | OPTION 2: Two main business segments 
                           i.fa.fa-chevron-up
                         br
-                        img.img-responsive.img-centered(src='dist/assets/images/work/dell_option_3.jpg' alt='OPTION 3')
+                        img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_3.jpg' alt='OPTION 3')
                         h4.text-center
                           | OPTION 3: Partial Desgmentation 
                           i.fa.fa-chevron-up
@@ -2131,7 +2133,7 @@ html(lang='en')
                       |                                 (engineering design, product design, human-centered design, and product-directed
                       |                                 entrepreneurship) methods on a project. We redesigned the standard power outlet.
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/evolve_features.jpg' alt='Evolve Outlet Final Design')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/evolve_features.jpg' alt='Evolve Outlet Final Design')
                     h4.text-center.color-gray-darker
                       | The Evolve Outlet 
                       i.fa.fa-chevron-up
@@ -2211,7 +2213,7 @@ html(lang='en')
                         | user&apos;s charging cable to help when visibility is poor around the wall outlet.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/evolve_sketch.jpg' alt='Evolve Outlet Design Evolution')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/evolve_sketch.jpg' alt='Evolve Outlet Design Evolution')
                     h4.text-center
                       | Evolution of our design 
                       i.fa.fa-chevron-up
@@ -2247,7 +2249,7 @@ html(lang='en')
                         |                                     overall best project category.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/evolve_3d.jpg' alt='Evolve Outlet 3D Print')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/evolve_3d.jpg' alt='Evolve Outlet 3D Print')
                     h4.text-center.color-gray-darker
                       | 3D print of our solution 
                       i.fa.fa-chevron-up
@@ -2291,13 +2293,13 @@ html(lang='en')
                 .row.portfolio-slide.slide-break
                   .col-lg-5.col-lg-offset-1
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/game1.jpg' alt='Symantec')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/game1.jpg' alt='Symantec')
                   .col-lg-5
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/game2.jpg' alt='Symantec')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/game2.jpg' alt='Symantec')
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/game3.jpg' alt='Symantec')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/game3.jpg' alt='Symantec')
                     h4.text-center
                       | Interactive Learning Game Design 
                       i.fa.fa-chevron-up
@@ -2310,7 +2312,7 @@ html(lang='en')
                 .row.portfolio-slide.slide-break
                   .col-lg-10.col-lg-offset-1
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/informatics.jpg' alt='informatics')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/informatics.jpg' alt='informatics')
                     h4.text-center
                       | Healthcare Taxonomy Software Wireframe 
                       i.fa.fa-chevron-up
@@ -2322,7 +2324,7 @@ html(lang='en')
                 .row.portfolio-slide.slide-break
                   .col-lg-6.col-lg-offset-3
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/paypal.jpg' alt='paypal')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/paypal.jpg' alt='paypal')
                     h4.text-center
                       | PayPal India Mockups 
                       i.fa.fa-chevron-up
@@ -2332,7 +2334,7 @@ html(lang='en')
                 .row.portfolio-slide.slide-break
                   .col-lg-10.col-lg-offset-1
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/symantec.jpg' alt='Symantec')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/symantec.jpg' alt='Symantec')
                     h4.text-center
                       | Support Portal Redesign 
                       i.fa.fa-chevron-up
@@ -2342,7 +2344,7 @@ html(lang='en')
                 .row.portfolio-slide.slide-break
                   .col-lg-10.col-lg-offset-1
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/misc/dell_patterns.jpg' alt='Dell Patterns')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/misc/dell_patterns.jpg' alt='Dell Patterns')
                     h4.text-center
                       | Pattern Design from Dell&apos;s Pattern Library 
                       i.fa.fa-chevron-up
@@ -2460,7 +2462,7 @@ html(lang='en')
                         | members of the UX team, to look for ideas and relations.
                   .col-lg-8.col-lg-offset-2
                     br
-                    img.img-responsive.img-centered(src='dist/assets/images/work/dell_personas.jpg' alt='Affinity Wall')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_personas.jpg' alt='Affinity Wall')
                     h4.text-center
                       | Interview planning and results analysis 
                       i.fa.fa-chevron-up
