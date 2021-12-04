@@ -88,13 +88,13 @@ html(lang='en')
                 li.hidden
                   a(href='#page-top')
                 li.page-scroll
-                  a(href='#portfolio') Portfolio
+                  a(href='#portfolio') My Work
                 li.page-scroll
-                  a(href='#about') About
+                  a(href='#about') About Me
                 li.page-scroll
                   a(href='#resume') Resume
                 li.page-scroll
-                  a(href='#contact') Contact
+                  a(href='#contact') Contact Me
             // /.navbar-collapse
           // /.container-fluid
         // Loading
@@ -112,7 +112,7 @@ html(lang='en')
                   p I&apos;m an interaction designer and design developer.
                   p
                     | My passion lies in the intersection of design, technology, and people. I have
-                    | over 12 years of technology experience including UX design and web/software
+                    | over 14 years of technology experience including UX design and web/software
                     | development.
         // Portfolio Grid Section
         section#portfolio
@@ -122,6 +122,22 @@ html(lang='en')
                 h3 My work
                 hr
             .row
+              .col-sm-6.col-lg-4.portfolio-item
+                a.portfolio-link(type='button' data-target='#modalJLR' data-toggle='modal')
+                  .caption.viewJLR
+                    .caption-content.viewJLR
+                      i.fa.fa-search-plus.fa-3x.viewJLR
+                  img.img-responsive(src='dist/assets/images/thumbnails/jlr.png' alt='JLR')
+                p.project-title.text-center In-Vehicle Infotainment
+                br
+              .col-sm-6.col-lg-4.portfolio-item
+                a.portfolio-link(type='button' data-target='#modalDell' data-toggle='modal')
+                  .caption.viewDell
+                    .caption-content.viewDell
+                      i.fa.fa-search-plus.fa-3x.viewDell
+                  img.img-responsive(src='dist/assets/images/thumbnails/dell.png' alt='Dell')
+                p.project-title.text-center Dell.com Redesign
+                br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalLibWeb' data-toggle='modal')
                   .caption.viewLibWeb
@@ -139,14 +155,6 @@ html(lang='en')
                 p.project-title.text-center Library Mobile App
                 br
               .col-sm-6.col-lg-4.portfolio-item
-                a.portfolio-link(type='button' data-target='#modalJLR' data-toggle='modal')
-                  .caption.viewJLR
-                    .caption-content.viewJLR
-                      i.fa.fa-search-plus.fa-3x.viewJLR
-                  img.img-responsive(src='dist/assets/images/thumbnails/jlr.png' alt='JLR')
-                p.project-title.text-center In-Vehicle Infotainment
-                br
-              .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalIntel' data-toggle='modal')
                   .caption.viewIntel
                     .caption-content.viewIntel
@@ -155,20 +163,12 @@ html(lang='en')
                 p.project-title.text-center Internet of Things
                 br
               .col-sm-6.col-lg-4.portfolio-item
-                a.portfolio-link(type='button' data-target='#modalDell' data-toggle='modal')
-                  .caption.viewDell
-                    .caption-content.viewDell
-                      i.fa.fa-search-plus.fa-3x.viewDell
-                  img.img-responsive(src='dist/assets/images/thumbnails/dell.png' alt='Dell')
-                p.project-title.text-center Dell.com Redesign
-                br
-              .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalVialogues' data-toggle='modal')
                   .caption.viewVialogues
                     .caption-content.viewVialogues
                       i.fa.fa-search-plus.fa-3x.viewVialogues
                   img.img-responsive(src='dist/assets/images/thumbnails/vialogues.png' alt='Vialogue')
-                p.project-title.text-center Video Discussion Tool
+                p.project-title.text-center Videos + Dialogues
                 br
             .row
               .col-sm-6.col-lg-4.portfolio-item
@@ -223,8 +223,7 @@ html(lang='en')
                   | work with user experience professionals. I was so excited and interested in what they did that I
                   | decided to go back to school. I spent two fantastic years at the University of Michigan learning
                   | more about design, user experience, and the fundamentals of human behavior. I have since worked
-                  | at a UX design agency and an in-house UX team, and I am currently leading a design-driven
-                  | development process at an education technology lab.
+                  | at a UX design agency and at in-house UX teams.
                 br
               .col-lg-3.col-lg-offset-1
                 p
@@ -362,9 +361,9 @@ html(lang='en')
                 ul.list-inline.text-center
                   li
                     a.btn-social(href='mailto:sabarishraghupathy@gmail.com')
-                      span.sr-only Mail
+                      span.sr-only E-Mail
                       i.fa.fa-fw.fa-envelope
-                    | sabarish.raghupathy at gmail dot com
+                    | sabarishraghupathy at gmail dot com
                   li
                     .btn-social
                       span.sr-only Phone
@@ -383,13 +382,13 @@ html(lang='en')
                   h3 Around the Web
                   ul.list-inline
                     li
-                      a.btn-social.btn-outline(target='_blank' href='https://twitter.com/sabarish')
-                        span.sr-only Twitter
-                        i.fa.fa-fw.fa-twitter
-                    li
                       a.btn-social.btn-outline(target='_blank' href='https://www.linkedin.com/in/rsabarish')
                         span.sr-only LinkedIn
                         i.fa.fa-fw.fa-linkedin
+                    li
+                      a.btn-social.btn-outline(target='_blank' href='https://twitter.com/sabarish')
+                        span.sr-only Twitter
+                        i.fa.fa-fw.fa-twitter
                     li
                       a.btn-social.btn-outline(target='_blank' href='https://www.flickr.com/photos/_sab/')
                         span.sr-only Flickr
@@ -399,7 +398,7 @@ html(lang='en')
             .container
               .row
                 .col-lg-12
-                  | &copy; sabarish.net | Last Updated: 09/21
+                  | &copy; sabarish.net | Last Updated: 12/21
               .row
                 .col-lg-12
                   br
@@ -421,7 +420,7 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-left.viewMisc
                   |  Prev
                 button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
@@ -633,7 +632,7 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Library Website
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-left.viewMisc
                   |  Prev
                 button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
@@ -651,7 +650,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-left.viewLibWeb
                   |  Prev
-                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
                   i.fa.fa-angle-right.viewJLR
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -804,7 +803,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-left.viewLibWeb
                   |  Prev
-                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
                   i.fa.fa-angle-right.viewJLR
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -816,10 +815,10 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
+                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-left.viewLibApp
                   |  Prev
-                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalIntel')")
+                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-right.viewIntel
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -866,28 +865,31 @@ html(lang='en')
                       | NDA, so if you&rsquo;d like to learn more, please ask offline.
                 .row.portfolio-header
                   .col-lg-8.col-lg-offset-2
-                    h2 The Process (Highlights):
+                    h2 The Process:
                     hr
                     ul
                       li
-                        | STRATEGY
+                        | STRATEGY / EXPLORATORY PHASE
                         ul
-                          li Brainstorm IVI use cases
+                          li Stakeholder meetings to determine project scope
+                          li Organize design thinking sessions with JLR stakeholders + engineers + designers
+                          li Develop IVI use cases
                       li
                         | RESEARCH
                         ul
+                          li Determine user needs
                           li Explore and develop usage models and scenarios
                       li
                         | DESIGN AND PROTOTYPE
                         ul
-                          li
-                            | Design and develop high-fidelity, functional prototypes for testing in cars
+                          li Design wireframes and revise after client feedback
+                          li Work closely with visual designers on high fidelity designs
+                          li Develop functional prototypes for testing in cars
                       li
                         | DELIVERABLES
                         ul
                           li Create detailed interaction design specs
-                          li
-                            | Provide the team with a feasibility analysis and design recommendations.
+                          li Provide the team with a feasibility analysis and design recommendations.
                 .row.portfolio-slide
                   .col-lg-8.col-lg-offset-2
                     h4 STRATEGY:
@@ -895,32 +897,33 @@ html(lang='en')
                   .col-lg-8.col-lg-offset-2
                     p.color-blue
                       | &#x279D;&nbsp;
-                      b Ideation Sessions / Stakeholder Meetings:
+                      b Stakeholder Meetings:
                     ul
-                      li
-                        | Brainstormed various ideas that could be explored with current and potential JLR
-                        | clients.
                       li Met with JLR employees to learn about their vision and expectations.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Project Requirements:
-                    ul
-                      li
-                        | Each use case concept needed to be completely detailed out, with user models,
+                      li Got introduced to the existing IVI systems and limitations.
+                      li Project scope is to develop detailed IVI use case concepts and designs around it.
+                      li Each use case concept needed to be completely detailed out, with user models,
                         | scenarios, storyboards, design intent, and recommendations, functioning prototypes,
                         | and high fidelity visual designs.
+                    p.color-blue
+                      | &#x279D;&nbsp;
+                      b Design thinking sessions
+                    ul
+                      li The team organized multi-day ideation sessions with
+                      | JLR engineers, designers, project managers and other stakeholders.
+                      li Several ideas were generated and presented and voted upon.
+                      li Final list of use cases were developed in detail.
                   .col-lg-6.col-lg-offset-3
                     br
                     img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_designthink.jpg' alt='JLR testing')
                     h4.text-center
-                      | Design Thinking Sessions
+                      | An idea from the Design Thinking Sessions
                       i.fa.fa-chevron-up
                 .row.portfolio-slide.slide-break
                   .col-lg-8.col-lg-offset-2
                     p.color-blue
                       | &#x279D;&nbsp;
-                      b IVI Use Cases / Concepts:
+                      b Developed IVI Use Cases / Concepts:
                     p
                       | I was personally involved in the following use case concepts over the course of two
                       | years-
@@ -958,8 +961,9 @@ html(lang='en')
                       b Determining User Needs:
                     ul
                       li Interviewed and observed users to understand current and potential users.
-                      li Understand current in-vehicle behavior as it relates to our concepts.
-                      li Created role models, usage models, and detailed use cases.
+                      li Brainstormed various ideas that could be explored with current and potential JLR customers.
+                      li Team conducted focus groups to understand current in-vehicle behavior as it relates to our use case concepts.
+                      li Created role models, usage models based on these user sessions.
                     blockquote
                       i
                         | We spent time at the Portland International Raceway to meet and talk to
@@ -972,6 +976,17 @@ html(lang='en')
                     h4.text-center
                       | Talking to racers
                       i.fa.fa-chevron-up
+                  .col-lg-8.col-lg-offset-2
+                    p.color-blue
+                      | &#x279D;&nbsp;
+                      b Scenarios:
+                    ul
+                      li We created detailed scenarios for different use cases and reviewed them regularly with the clients.
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_flow.jpg' alt='JLR testing')
+                    h4.text-center
+                      | A Use Case Interaction Flow with Visuals
+                      i.fa.fa-chevron-up
+                    br
                 .row.portfolio-slide
                   .col-lg-8.col-lg-offset-2
                     h4 DESIGN AND PROTOTYPE:
@@ -981,22 +996,9 @@ html(lang='en')
                       | &#x279D;&nbsp;
                       b Wireframing:
                     ul
-                      li
-                        | Wireframe sketches exploring elements of the user experience for each concept were
-                        | created and tested with users.
+                      li Wireframe sketches exploring elements of the user experience for each concept were created.
+                      li We regularly tested our designs with users.
                       li User feedback was then incorporated into a second revision of the designs.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Scenarios:
-                    ul
-                      li
-                        | We created detailed scenarios for different use cases and reviewed them regularly
-                        | with the clients.
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_flow.jpg' alt='JLR testing')
-                    h4.text-center
-                      | An Example Use Case Interaction Flow
-                      i.fa.fa-chevron-up
                     br
                     p.color-blue
                       | &#x279D;&nbsp;
@@ -1053,10 +1055,10 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong JLR IVI
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
+                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-left.viewLibApp
                   |  Prev
-                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalIntel')")
+                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-right.viewIntel
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -1068,10 +1070,10 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
                   i.fa.fa-angle-left.viewJLR
                   |  Prev
-                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalVialogues')")
                   i.fa.fa-angle-right.viewDell
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -1240,10 +1242,10 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Intel IoT
-                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
                   i.fa.fa-angle-left.viewJLR
                   |  Prev
-                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalVialogues')")
                   i.fa.fa-angle-right.viewDell
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -1463,7 +1465,7 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalIntel')")
                   i.fa.fa-angle-left.viewDell
                   |  Prev
                 button.btn.btn-default.btn-next.viewEvolve(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
@@ -1669,7 +1671,7 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Vialogues
-                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalIntel')")
                   i.fa.fa-angle-left.viewDell
                   |  Prev
                 button.btn.btn-default.btn-next.viewEvolve(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
@@ -1912,10 +1914,10 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalIntel')")
+                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-left.viewIntel
                   |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalVialogues')")
+                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-right.viewVialogues
                   |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2114,10 +2116,10 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Dell.com Redesign
-                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalIntel')")
+                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-left.viewIntel
                   |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalVialogues')")
+                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-right.viewVialogues
                   |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2293,7 +2295,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalRhizr')")
                   i.fa.fa-angle-left.viewRhizr
                   |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-right.viewLibWeb
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2376,7 +2378,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalRhizr')")
                   i.fa.fa-angle-left.viewRhizr
                   |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-right.viewLibWeb
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
