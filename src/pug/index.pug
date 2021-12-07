@@ -2524,12 +2524,11 @@ html(lang='en')
           var sc_invisible = 1;
           var sc_click_stat = 2;
           var sc_security = "b2525a4f";
+          var _statcounter = _statcounter || [];
           window.onhashchange = locationHashChanged;
-
           function locationHashChanged() {
             var matchedString = window.location.hash;
-            console.log('matchedString ' + matchedString);
-            var _statcounter = _statcounter || [];
+            console.log('project ' + matchedString);
             _statcounter.push({"tags": {"project": matchedString}});
           };
         script(type='text/javascript' src='https://www.statcounter.com/counter/counter.js' async='')
