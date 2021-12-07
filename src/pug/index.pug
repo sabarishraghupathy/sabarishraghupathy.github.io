@@ -961,21 +961,25 @@ html(lang='en')
                       b Determining User Needs:
                     ul
                       li Interviewed and observed users to understand current and potential users.
+                      blockquote
+                        i
+                          | We spent time at the Portland International Raceway to meet and talk to
+                          | drivers and experience the racing environment. We learned more about driver
+                          | behavior, needs and desires, and usage of driving trackers/analyzers and
+                          | cameras.
+                      br
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_racetrack.jpg' alt='JLR testing')
+                      h4.text-center
+                        | Talking to racers
+                        i.fa.fa-chevron-up
                       li Brainstormed various ideas that could be explored with current and potential JLR customers.
                       li Team conducted focus groups to understand current in-vehicle behavior as it relates to our use case concepts.
                       li Created role models, usage models based on these user sessions.
-                    blockquote
-                      i
-                        | We spent time at the Portland International Raceway to meet and talk to
-                        | drivers and experience the racing environment. We learned more about driver
-                        | behavior, needs and desires, and usage of driving trackers/analyzers and
-                        | cameras.
-                  .col-lg-6.col-lg-offset-3
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_racetrack.jpg' alt='JLR testing')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_taskmodel.jpg' alt='JLR testing')
                     h4.text-center
-                      | Talking to racers
+                      | Ideation sessions
                       i.fa.fa-chevron-up
+                    br
                   .col-lg-8.col-lg-offset-2
                     p.color-blue
                       | &#x279D;&nbsp;
@@ -2022,11 +2026,11 @@ html(lang='en')
                       li
                         b Product Consolidation
                         |  - bring all products under one section and help users
-                        |                                     find what they are looking for by &apos;Product Type&apos; (ex: Laptop).
+                        |  find what they are looking for by &apos;Product Type&apos; (ex: Laptop).
                       li
                         b Franchise Branding and Activities
                         |  - allow users to shop by &apos;Brands&apos; (ex:
-                        |                                     Latitude or Alienware) or &apos;Activity&apos; (ex: Gaming).
+                        |  Latitude or Alienware) or &apos;Activity&apos; (ex: Gaming).
                       br
                       img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_consolidated.jpg' alt='Initial Dell design')
                       h4.text-center
@@ -2036,9 +2040,7 @@ html(lang='en')
                     ul
                       li
                         b Desegmentation
-                        |  - We decided to proceed with desegmentation and test which of
-                        |                                     the following reduced
-                        |                                     segments will work best:
+                        |  - We decided to proceed with desegmentation and test which of the following reduced segments will work best:
                         br
                         br
                         img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_1.jpg' alt='OPTION 1')
@@ -2526,6 +2528,7 @@ html(lang='en')
 
           function locationHashChanged() {
             var matchedString = window.location.hash;
+            console.log('matchedString ' + matchedString);
             var _statcounter = _statcounter || [];
             _statcounter.push({"tags": {"project": matchedString}});
           };

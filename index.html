@@ -787,16 +787,18 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                 <p class="color-blue">&#x279D;&nbsp;<b>Determining User Needs:</b></p>
                                 <ul>
                                     <li>Interviewed and observed users to understand current and potential users.</li>
+                                    <blockquote><i>We spent time at the Portland International Raceway to meet and talk to drivers and experience the racing environment. We learned more about driver behavior, needs and desires, and usage of driving trackers/analyzers and cameras.</i></blockquote>
+                                    <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_racetrack.jpg" alt="JLR testing" />
+                                    <h4 class="text-center">Talking to racers<i class="fa fa-chevron-up"></i></h4>
                                     <li>Brainstormed various ideas that could be explored with current and potential JLR customers.</li>
                                     <li>Team conducted focus groups to understand current in-vehicle behavior as it relates to our use case concepts.</li>
                                     <li>Created role models, usage models based on these user sessions.</li>
                                 </ul>
-                                <blockquote><i>We spent time at the Portland International Raceway to meet and talk to drivers and experience the racing environment. We learned more about driver behavior, needs and desires, and usage of driving trackers/analyzers and cameras.</i></blockquote>
+                                <img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_taskmodel.jpg" alt="JLR testing" />
+                                <h4 class="text-center">Ideation sessions<i class="fa fa-chevron-up"></i></h4>
+                                <br />
                             </div>
-                            <div class="col-lg-6 col-lg-offset-3">
-                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_racetrack.jpg" alt="JLR testing" />
-                                <h4 class="text-center">Talking to racers<i class="fa fa-chevron-up"></i></h4>
-                            </div>
+
                             <div class="col-lg-8 col-lg-offset-2">
                                 <p class="color-blue">&#x279D;&nbsp;<b>Scenarios:</b></p>
                                 <ul>
@@ -1984,6 +1986,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
             function locationHashChanged() {
                 var matchedString = window.location.hash;
+                console.log('matchedString ' + matchedString);
                 var _statcounter = _statcounter || [];
                 _statcounter.push({ tags: { project: matchedString } });
             }
