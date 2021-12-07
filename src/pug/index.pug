@@ -2520,8 +2520,14 @@ html(lang='en')
         script(type='text/javascript').
           var sc_project = 11626916;
           var sc_invisible = 1;
-          var sc_click_stat=2;
+          var sc_click_stat = 2;
           var sc_security = "b2525a4f";
+          var matchedString = window.location.hash;
+          if (matchedString != null) {
+            matchedString = matchedString[0];
+            var _statcounter = _statcounter || [];
+            _statcounter.push({"tags": {"project": matchedString}});
+          }
         script(type='text/javascript' src='https://www.statcounter.com/counter/counter.js' async='')
         noscript
           .statcounter

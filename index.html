@@ -419,9 +419,8 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                     <blockquote><i>"A unique aspect of this library is the acquisitions are largely patron-driven. We should highlight this in the new system." - Library Director</i></blockquote>
                                     <li>Interviewed patrons to get feedback on the existing library website</li>
                                     <blockquote><i>"There is too much going on throughout the site!" - Patrons</i></blockquote>
-                                    <br />
                                     <li>Evaluated the existing website and Google Analytics data.</li>
-                                    <img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_clicks.jpg" alt="Library App Home Screen" />
+                                    <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_clicks.jpg" alt="Library App Home Screen" />
                                     <h4 class="text-center">What 90% of the visitors click on&nbsp;<i class="fa fa-chevron-up"></i></h4>
                                     <br />
                                 </ul>
@@ -1981,6 +1980,12 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             var sc_invisible = 1;
             var sc_click_stat = 2;
             var sc_security = 'b2525a4f';
+            var matchedString = window.location.hash;
+            if (matchedString != null) {
+                matchedString = matchedString[0];
+                var _statcounter = _statcounter || [];
+                _statcounter.push({ tags: { project: matchedString } });
+            }
         </script>
         <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
         <noscript
