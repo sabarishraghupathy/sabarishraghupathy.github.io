@@ -1983,6 +1983,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             var matchedString = window.location.hash;
             if (matchedString != null) {
                 matchedString = matchedString[0];
+                console.log('matchedString ' + matchedString);
                 var _statcounter = _statcounter || [];
                 _statcounter.push({ tags: { project: matchedString } });
             }
