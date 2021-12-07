@@ -1980,10 +1980,10 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             var sc_invisible = 1;
             var sc_click_stat = 2;
             var sc_security = 'b2525a4f';
-            var matchedString = window.location.hash;
-            if (matchedString != null) {
-                matchedString = matchedString[0];
-                console.log('matchedString ' + matchedString);
+            window.onhashchange = locationHashChanged;
+
+            function locationHashChanged() {
+                var matchedString = window.location.hash;
                 var _statcounter = _statcounter || [];
                 _statcounter.push({ tags: { project: matchedString } });
             }
