@@ -2151,8 +2151,10 @@ html(lang='en')
                       | (engineering design, product design, human-centered design, and product-directed
                       | entrepreneurship) methods on a project. We redesigned the standard power outlet.
                     br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/evolve_features.jpg' alt='Evolve Outlet Final Design')
-                    h4.text-center.color-gray-darker
+                    .text-center
+                      video(width='560' height='315' controls='' autoplay)
+                        source(src='dist/assets/images/evolve-outlet.ogg' type='video/ogg; codecs="theora, vorbis"')
+                    h4.text-center
                       | The Evolve Outlet
                       i.fa.fa-chevron-up
                 .row.portfolio-slide.slide-break
@@ -2257,10 +2259,15 @@ html(lang='en')
                       li 2 USB Charging Ports
                       li Self-contained, auto-retracting 48&quot; extension cord.
                       li Fits in the standard 2-Panel wall box
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/evolve_features.jpg' alt='Evolve Outlet Final Design')
+                    h4.text-center.color-gray-darker
+                      | Final Design of the Evolve Outlet
+                      i.fa.fa-chevron-up
+                    br
                     blockquote
                       i
                         | A 3D print version of the evolve outlet was displayed at the Design Expo at
-                        | The University of Michigan and won the
+                        | The University of Michigan and won the&nbsp;
                         b Best Project Award
                         | ! The project was also displayed at UMSI&apos;s &quot;expoSItion &apos;13&quot;
                         | and got an honorable mention under the overall best project category.
@@ -2529,7 +2536,7 @@ html(lang='en')
           window.onhashchange = locationHashChanged;
           function locationHashChanged() {
             var matchedString = window.location.hash;
-            console.log('project ' + matchedString);
+            //- console.log('project ' + matchedString);
             _statcounter.push({"tags": {"project": matchedString}});
             _statcounter.record_pageview();
           };

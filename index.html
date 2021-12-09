@@ -1674,8 +1674,11 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                 <h2>Evolve Outlet</h2>
                                 <hr />
                                 <p class="project-intro">The&nbsp;<a href="https://sites.google.com/umich.edu/apd/past-projects-by-topic?authuser=0#h.p_l6TnCjokF5xh" target="_blank">Analytical Product Design</a> course at The University of Michigan requires students to work in teams to apply multidisciplinary (engineering design, product design, human-centered design, and product-directed entrepreneurship) methods on a project. We redesigned the standard power outlet.</p>
-                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/evolve_features.jpg" alt="Evolve Outlet Final Design" />
-                                <h4 class="text-center color-gray-darker">The Evolve Outlet<i class="fa fa-chevron-up"></i></h4>
+                                <br />
+                                <div class="text-center">
+                                    <video width="560" height="315" controls="" autoplay><source src="dist/assets/images/evolve-outlet.ogg" type='video/ogg; codecs="theora, vorbis"' /></video>
+                                </div>
+                                <h4 class="text-center">The Evolve Outlet<i class="fa fa-chevron-up"></i></h4>
                             </div>
                         </div>
                         <div class="row portfolio-slide slide-break">
@@ -1767,8 +1770,11 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                     <li>Self-contained, auto-retracting 48&quot; extension cord.</li>
                                     <li>Fits in the standard 2-Panel wall box</li>
                                 </ul>
+                                <img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/evolve_features.jpg" alt="Evolve Outlet Final Design" />
+                                <h4 class="text-center color-gray-darker">Final Design of the Evolve Outlet<i class="fa fa-chevron-up"></i></h4>
+                                <br />
                                 <blockquote>
-                                    <i>A 3D print version of the evolve outlet was displayed at the Design Expo at The University of Michigan and won the<b>Best Project Award</b>! The project was also displayed at UMSI&apos;s &quot;expoSItion &apos;13&quot; and got an honorable mention under the overall best project category.</i>
+                                    <i>A 3D print version of the evolve outlet was displayed at the Design Expo at The University of Michigan and won the&nbsp;<b>Best Project Award</b>! The project was also displayed at UMSI&apos;s &quot;expoSItion &apos;13&quot; and got an honorable mention under the overall best project category.</i>
                                 </blockquote>
                             </div>
                             <div class="col-lg-8 col-lg-offset-2">
@@ -1987,7 +1993,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             window.onhashchange = locationHashChanged;
             function locationHashChanged() {
                 var matchedString = window.location.hash;
-                console.log('project ' + matchedString);
+                //- console.log('project ' + matchedString);
                 _statcounter.push({ tags: { project: matchedString } });
                 _statcounter.record_pageview();
             }
