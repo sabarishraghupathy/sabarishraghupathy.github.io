@@ -107,6 +107,16 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 portfolio-item">
+                        <a class="portfolio-link" type="button" data-target="#modalLibWeb" data-toggle="modal"
+                            ><div class="caption viewLibWeb">
+                                <div class="caption-content viewLibWeb"><i class="fa fa-search-plus fa-3x viewLibWeb"></i></div>
+                            </div>
+                            <img class="img-responsive" src="dist/assets/images/thumbnails/libweb.png" alt="Library Website"
+                        /></a>
+                        <p class="project-title text-center">Library Website</p>
+                        <br />
+                    </div>
+                    <div class="col-sm-6 col-lg-4 portfolio-item">
                         <a class="portfolio-link" type="button" data-target="#modalJLR" data-toggle="modal"
                             ><div class="caption viewJLR">
                                 <div class="caption-content viewJLR"><i class="fa fa-search-plus fa-3x viewJLR"></i></div>
@@ -124,16 +134,6 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <img class="img-responsive" src="dist/assets/images/thumbnails/dell.png" alt="Dell"
                         /></a>
                         <p class="project-title text-center">Dell.com Redesign</p>
-                        <br />
-                    </div>
-                    <div class="col-sm-6 col-lg-4 portfolio-item">
-                        <a class="portfolio-link" type="button" data-target="#modalLibWeb" data-toggle="modal"
-                            ><div class="caption viewLibWeb">
-                                <div class="caption-content viewLibWeb"><i class="fa fa-search-plus fa-3x viewLibWeb"></i></div>
-                            </div>
-                            <img class="img-responsive" src="dist/assets/images/thumbnails/libweb.png" alt="Library Website"
-                        /></a>
-                        <p class="project-title text-center">Library Website</p>
                         <br />
                     </div>
                     <div class="col-sm-6 col-lg-4 portfolio-item">
@@ -186,16 +186,6 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <img class="img-responsive" src="dist/assets/images/thumbnails/edlab.png" alt="EdLab Website"
                         /></a>
                         <p class="project-title text-center">EdLab Website</p>
-                        <br />
-                    </div>
-                    <div class="col-sm-6 col-lg-4 portfolio-item">
-                        <a class="portfolio-link" type="button" data-target="#modalRhizr" data-toggle="modal"
-                            ><div class="caption viewRhizr">
-                                <div class="caption-content viewRhizr"><i class="fa fa-search-plus fa-3x viewRhizr"></i></div>
-                            </div>
-                            <img class="img-responsive" src="dist/assets/images/thumbnails/rhizr.png" alt="Rhizr"
-                        /></a>
-                        <p class="project-title text-center">Learning Organization Platform</p>
                         <br />
                     </div>
                     <div class="col-sm-6 col-lg-4 portfolio-item">
@@ -336,70 +326,69 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewMisc" type="button" title="Previous Project" onclick="showModal('modalDell')"><i class="fa fa-angle-left viewMisc"></i> Prev</button><button class="btn btn-default btn-next viewLibApp" type="button" title="Next Project" onclick="showModal('modalLibApp')"><i class="fa fa-angle-right viewLibApp"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewMisc" type="button" title="Previous Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-left viewMisc"></i> Prev</button><button class="btn btn-default btn-next viewLibApp" type="button" title="Next Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-right viewLibApp"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
                             <div class="col-lg-8 col-lg-offset-2">
                                 <h2>Library Website</h2>
                                 <hr />
-                                <p class="project-intro">The Gottesman Libraries at Teachers College Columbia University is constantly evolving and headed to a future of seamless experiences for patrons. The new Library App and updated Library Website are two significant steps on this journey.</p>
-                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_home.jpg" alt="Library Website Homepage" />
-                                <h4 class="text-center color-gray-darker">New Gottesman Libraries homepage<i class="fa fa-chevron-up"></i></h4>
+                                <p class="project-intro">The Gottesman Libraries at Teachers College Columbia University is constantly evolving and headed to a future of seamless experiences for patrons.<br />Unfortunately, the library's digital presence was still stuck in the past. Patrons had no idea how to use it effectively, and the librarians were tired of spending unnecessary time helping patrons navigate the clunky system.</p>
                             </div>
                         </div>
                         <div class="row portfolio-slide slide-break">
                             <div class="col-lg-8 col-lg-offset-2">
                                 <h3>The project:</h3>
-                                <p>Update the existing website and connected systems to enable patrons to easily access various library services and resources.</p>
+                                <p>Update the existing website and connected systems to enable patrons to easily access various library services and resources, such as:</p>
+                                <ul>
+                                    <li>Library homepage and information pages</li>
+                                    <li>Books, articles, media, research papers, etc.</li>
+                                    <li>Study Rooms</li>
+                                    <li>Online Support</li>
+                                    <li>Search across all the above resources</li>
+                                </ul>
                                 <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_old.jpg" alt="Old Library Website Home" />
                                 <h4 class="text-center">Old Gottesman Libraries homepage<i class="fa fa-chevron-up"></i></h4>
                                 <br />
                                 <h3>My role:</h3>
-                                <p>As the lead user experience designer, I was responsible for the complete creative direction of the project, from conception and research to design and implementation.</p>
+                                <p>I was the lead designer on this project and was responsible for its complete creative execution. I worked closely with a&nbsp;<a href="https://www.himynameisjo.com/" target="_blank">UX researcher</a> for the initial analysis and later testing parts. I created the high-fidelity designs, and then worked closely with the developers to help implement the designs by polishing some functionality and styles.</p>
                                 <br />
-                                <h3>The outcome:</h3>
-                                <p>The library successfully migrated to the new systems, including new -</p>
+                                <h3>The Outcome:</h3>
                                 <ul>
-                                    <li><a href="https://library.tc.columbia.edu/" target="_blank">Library Website</a></li>
-                                    <li>CMS [Login Wall]</li>
-                                    <li>Room Reservation System [Login Wall]</li>
-                                    <li><a href="https://support.library.tc.columbia.edu/support/home" target="_blank">Support Ticket System</a></li>
-                                    <li><a href="https://library.tc.columbia.edu/payments/" target="_blank">Payments Gateway</a></li>
-                                    <li><a href="http://tc.summon.serialssolutions.com.eduproxy.tc-library.org:8080/#!/" target="_blank">Revamped Serial Solutions Search System</a></li>
+                                    <li>The newly launched&nbsp;<a href="https://library.tc.columbia.edu/" target="_blank">Library Website</a>&nbsp;and associated systems have been a huge hit and very popular with the patrons and staff.</li>
+                                    <li>We revised the IA, removed all the extra links, and came up with a simple and clean design aesthetic.</li>
+                                    <li>Patrons were able to discover various library resources on their own and their dependance on the library service staff and front-desk reduced dramatically.</li>
+                                    <li>This project also led to the creation of other related projects, including, a more powerful Room Reservation system, a new Payments Gateway, a new Library Archive system (PocketKnowledge), and an improved Super Search system.</li>
                                 </ul>
+                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_home.jpg" alt="Library Website Homepage" />
+                                <h4 class="text-center color-gray-darker">New Gottesman Libraries homepage<i class="fa fa-chevron-up"></i></h4>
+                                <br />
                             </div>
                         </div>
                         <div class="row portfolio-header">
                             <div class="col-lg-8 col-lg-offset-2">
-                                <h2>The Process (highlights):</h2>
+                                <h2>The Process (Highlights):</h2>
                                 <hr />
                                 <ul>
                                     <li>
-                                        STRATEGY
+                                        STRATEGY & RESEARCH
                                         <ul>
-                                            <li>Ideation Sessions</li>
-                                            <li>Determine Roadmap</li>
+                                            <li>Worked with the PM and stakeholders for project conception and requirements gathering</li>
+                                            <li>Evaluated existing systems</li>
+                                            <li>Organized ideation sessions and design jams with PM</li>
+                                            <li>Worked with UX researcher to understand user pain points</li>
                                         </ul>
                                     </li>
                                     <li>
-                                        RESEARCH
+                                        DESIGN & IMPLEMENT
                                         <ul>
-                                            <li>Conduct Initial research</li>
-                                            <li>Contextual Inquiry</li>
-                                            <li>Define our User Models</li>
-                                            <li>Create User Flows</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        DESIGN AND PROTOTYPE
-                                        <ul>
-                                            <li>Define the Information Architecture</li>
-                                            <li>Wireframe and Prototype designs</li>
-                                            <li>Collect feedback on high-fidelity mockups</li>
-                                            <li>Usability testing</li>
-                                            <li>Visual design</li>
-                                            <li>CSS implementation</li>
+                                            <li>Defined the Information Architecture</li>
+                                            <li>Designed all the interactions and wireframes</li>
+                                            <li>Regularly presented designs to stakeholders for feedback</li>
+                                            <li>Helped the UX researcher with testing the designs and flows</li>
+                                            <li>Refined designs and created final visual designs</li>
+                                            <li>Helped the developers implement the designs by working on the CSS, layouts, fonts, etc.</li>
+                                            <li>Perform regular updates based on feedback from patrons and librarians</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -413,36 +402,37 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <div class="col-lg-8 col-lg-offset-2">
                                 <p class="color-blue">&#x279D;&nbsp;<b>Initial Research and Interviews:</b></p>
                                 <ul>
-                                    <li>Met with stakeholders at the Library and University.</li>
+                                    <li>Met with stakeholders at the Library and University who shared their vision for the new site.</li>
                                     <blockquote><i>"The new system should support self-directed learning." - Library Director</i></blockquote>
-                                    <li>Did a comparative analysis of other library websites and apps.</li>
+                                    <li>I did a comparative analysis of other library websites and apps.</li>
                                     <blockquote><i>"A unique aspect of this library is the acquisitions are largely patron-driven. We should highlight this in the new system." - Library Director</i></blockquote>
-                                    <li>Interviewed patrons to get feedback on the existing library website</li>
+                                    <li>Interviewed patrons to get feedback on the existing library website.</li>
                                     <blockquote><i>"There is too much going on throughout the site!" - Patrons</i></blockquote>
-                                    <li>Evaluated the existing website and Google Analytics data.</li>
                                     <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_clicks.jpg" alt="Library App Home Screen" />
-                                    <h4 class="text-center">What 90% of the visitors click on&nbsp;<i class="fa fa-chevron-up"></i></h4>
+                                    <h4 class="text-center">What 90% of the visitors click on as per analytics data&nbsp;<i class="fa fa-chevron-up"></i></h4>
                                     <br />
                                 </ul>
                             </div>
                             <div class="col-lg-8 col-lg-offset-2">
                                 <p class="color-blue">&#x279D;&nbsp;<b>Contextual Inquiry with Librarians:</b></p>
                                 <ul>
-                                    <li>Observed and interviewed extensively (along with a UX researcher) the current &apos;interface&apos; between patrons and the library - the librarians and library staff.</li>
-                                    <li>We got access to the help desk/ticket system, which had a lot of insightful submissions over the years.</li>
+                                    <li>Observed and interviewed extensively (along with a UX researcher) the librarians and library staff.</li>
+                                    <li>We got access to the old help desk/ticket system, which had a lot of insightful submissions over the years.</li>
                                     <li>The old website hadn&apos;t changed much in almost a decade so a lot of the site&apos;s flaws were well known to the library staff.</li>
                                     <blockquote><i>"We would tell patrons to click the 1st column, 7th row, 2nd link, to get to the fine payment system!" - Librarians</i></blockquote>
                                     <li>The library staff empathizes with what patrons are looking for and gave valuable insight into how they are currently being helped.</li>
                                     <blockquote><i>"Many patrons would just bring all their books in physically to renew them rather than use the online system. Most weren&apos;t even aware of the online system!" - Librarians</i></blockquote>
                                     <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_links.jpg" alt="Library App Home Screen" />
-                                    <h4 class="text-center">Old website had too many links&nbsp;<i class="fa fa-chevron-up"></i></h4>
+                                    <h4 class="text-center">Old website was very text heavy&nbsp;<i class="fa fa-chevron-up"></i></h4>
+                                    <br />
                                 </ul>
+
                                 <p class="color-blue">&#x279D;&nbsp;<b>User &amp; Task Models:</b></p>
                                 <p>We are focusing on the following 3 broad types of users:</p>
                                 <ul>
-                                    <li><b>The Patron, who avails of various library services.</b></li>
-                                    <li><b>The Professor, who requires the library to purchase books and needs to</b>integrate courses with these course readings.</li>
-                                    <li><b>The Librarian, who supports the above two users and their requests.</b></li>
+                                    <li><b>The Patron,&nbsp;</b>who avails of various library services.</li>
+                                    <li><b>The Professor,&nbsp;</b>who requires the library to purchase books and needs to integrate courses with these course readings.</li>
+                                    <li><b>The Librarian,&nbsp;</b>who supports the above two users and their requests.</li>
                                 </ul>
                             </div>
                             <div class="col-lg-8 col-lg-offset-2">
@@ -458,37 +448,86 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <div class="col-lg-8 col-lg-offset-2">
                                 <p class="color-blue">&#x279D;&nbsp;<b>Information Architecture:</b></p>
                                 <ul>
-                                    <li>Created a sitemap of the old website</li>
-                                    <li>Explored the source repository to map the hundreds of pages and sub-pages within the old website.</li>
-                                    <li>An affinity wall of post-it notes was created to analyze all the pages. We purged several categories, re-classified others, and created new categories for all the pages.</li>
+                                    <li>Created a sitemap of the old website and mapped the hundreds of pages and sub-pages within theold website.</li>
+                                    <blockquote><i>An affinity wall of post-it notes was created to analyze all the pages. We purged several categories, re-classified others, and created new categories for all the pages.</i></blockquote>
+                                    <br />
                                 </ul>
                             </div>
                             <div class="col-lg-8 col-lg-offset-2">
-                                <p class="color-blue">&#x279D;&nbsp;<b>Interaction Design / Development:</b></p>
-                                <ul>
-                                    <li>Designed multiple wireframe versions of different screens.</li>
-                                    <li>Regularly presented this to the stakeholders for feedback.</li>
-                                    <li>Tested designs with library patrons and staff for usability and feasibility.</li>
-                                    <li>I assisted the developers in implementing the finalized designs of the library website, CMS, and Payment Gateway.</li>
-                                    <li>Revamped the old WebPAC Pro Summon and Serial Solutions search interfaces.</li>
-                                    <li>Implemented a Freshdesk solution as our new support system.</li>
-                                    <br /><br />
-                                </ul>
+                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_sitemap.jpg" alt="Library Website Sitemap" />
+                                <h4 class="text-center">Mapping existing pages and relationships<i class="fa fa-chevron-up"></i></h4>
+                                <br />
                             </div>
-                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/library_home_2.jpg" alt="Library Website Home 1" /></div>
-                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/library_home_3.jpg" alt="Library Website Home 2" /></div>
                             <div class="col-lg-8 col-lg-offset-2">
-                                <h4 class="text-center">Sample of homepage wireframe options<i class="fa fa-chevron-up"></i></h4>
+                                <p class="color-blue">&#x279D;&nbsp;<b>Designing the hompage:</b></p>
+                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_wireframe1.jpg" alt="Library App Home Screen" />
+                                <h4 class="text-center">Early wireframe showing key items<i class="fa fa-chevron-up"></i></h4>
+                                <br /><br />
+                            </div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_homepage_0.jpg" alt="Library Website Home 1" /></div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_homepage_3.jpg" alt="Library Website Home 2" /></div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4 class="text-center">Sample of homepage options<i class="fa fa-chevron-up"></i></h4>
+                                <br />
+                            </div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_homepage_1.jpg" alt="Library Website Home 1" /></div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_homepage_2.jpg" alt="Library Website Home 2" /></div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4 class="text-center">Evolution of homepage<i class="fa fa-chevron-up"></i></h4>
+                                <br /><br />
+                            </div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <p class="color-blue">&#x279D;&nbsp;<b>Super search system:</b></p>
+                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_search_0.jpg" alt="Library Search" />
+                                <h4 class="text-center">Search dropdown with matching searches<i class="fa fa-chevron-up"></i></h4>
+                                <br />
+                            </div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_search_1.jpg" alt="Library Search 1" /></div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_search_2.jpg" alt="Library Search 2" /></div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4 class="text-center">Search results design in progress<i class="fa fa-chevron-up"></i></h4>
+                                <br /><br />
+                            </div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <p class="color-blue">&#x279D;&nbsp;<b>Room reservation system:</b></p>
+                                <br />
+                            </div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_room_patron1.jpg" alt="Library Room 1" /></div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_room_patron2.jpg" alt="Library Room 2" /></div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4 class="text-center">Designing the patron room booking experience<i class="fa fa-chevron-up"></i></h4>
+                                <br />
+                            </div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_room_admin.jpg" alt="Library Room Admin" />
+                                <h4 class="text-center">Library admins view to book rooms<i class="fa fa-chevron-up"></i></h4>
+                                <br /><br />
+                            </div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <p class="color-blue">&#x279D;&nbsp;<b>Payments system:</b></p>
+                                <br />
+                            </div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_payment1.jpg" alt="Library Payment 1" /></div>
+                            <div class="col-lg-6"><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/lib_web_payment2.jpg" alt="Library Payment 2" /></div>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4 class="text-center">Designing the patron room booking experience<i class="fa fa-chevron-up"></i></h4>
+                                <br />
                             </div>
                         </div>
                         <div class="row portfolio-slide">
                             <div class="col-lg-8 col-lg-offset-2">
-                                <h4>THE OUTCOME:</h4>
+                                <h4>FINAL SOLUTION:</h4>
                                 <hr />
                             </div>
                             <div class="col-lg-8 col-lg-offset-2">
-                                <p>The new&nbsp;<a href="https://library.tc.columbia.edu/" target="_blank">Library Website</a>&nbsp;and associated systems have been a huge hit and very popular with the staff, patrons, and other users.</p>
-                                <blockquote><i>"We constantly get great feedback about the website, and it has</i>made life a lot easier for the front-desk staff, with far fewer questions about the printer or renewing and requesting books." - Librarians</blockquote>
+                                <p>The library successfully migrated to the new systems, including new -</p>
+                                <ul>
+                                    <li><a href="https://library.tc.columbia.edu/" target="_blank">Library Website</a></li>
+                                    <li><a href="https://support.library.tc.columbia.edu/support/home" target="_blank">Support Ticket System</a></li>
+                                    <li><a href="https://library.tc.columbia.edu/payments/" target="_blank">Payments Gateway</a></li>
+                                    <li>Room Reservation System [Login Wall]</li>
+                                </ul>
+                                <blockquote><i>"We constantly get great feedback about the website, and it has made life a lot easier for the front-desk staff, with far fewer questions about the printer or paying fines or renewing books." - Librarians</i></blockquote>
                                 <br />
                             </div>
                         </div>
@@ -497,7 +536,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>Library Website</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewMisc" type="button" title="Previous Project" onclick="showModal('modalDell')"><i class="fa fa-angle-left viewMisc"></i> Prev</button><button class="btn btn-default btn-next viewLibApp" type="button" title="Next Project" onclick="showModal('modalLibApp')"><i class="fa fa-angle-right viewLibApp"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewMisc" type="button" title="Previous Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-left viewMisc"></i> Prev</button><button class="btn btn-default btn-next viewLibApp" type="button" title="Next Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-right viewLibApp"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
@@ -507,7 +546,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewLibWeb" type="button" title="Previous Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-left viewLibWeb"></i> Prev</button><button class="btn btn-default btn-next viewJLR" type="button" title="Next Project" onclick="showModal('modalIntel')"><i class="fa fa-angle-right viewJLR"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewLibWeb" type="button" title="Previous Project" onclick="showModal('modalDell')"><i class="fa fa-angle-left viewLibWeb"></i> Prev</button><button class="btn btn-default btn-next viewJLR" type="button" title="Next Project" onclick="showModal('modalIntel')"><i class="fa fa-angle-right viewJLR"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
@@ -633,7 +672,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>Library Mobile App</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewLibWeb" type="button" title="Previous Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-left viewLibWeb"></i> Prev</button><button class="btn btn-default btn-next viewJLR" type="button" title="Next Project" onclick="showModal('modalIntel')"><i class="fa fa-angle-right viewJLR"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewLibWeb" type="button" title="Previous Project" onclick="showModal('modalDell')"><i class="fa fa-angle-left viewLibWeb"></i> Prev</button><button class="btn btn-default btn-next viewJLR" type="button" title="Next Project" onclick="showModal('modalIntel')"><i class="fa fa-angle-right viewJLR"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
@@ -643,7 +682,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewLibApp" type="button" title="Previous Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-left viewLibApp"></i> Prev</button><button class="btn btn-default btn-next viewIntel" type="button" title="Next Project" onclick="showModal('modalDell')"><i class="fa fa-angle-right viewIntel"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewLibApp" type="button" title="Previous Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-left viewLibApp"></i> Prev</button><button class="btn btn-default btn-next viewIntel" type="button" title="Next Project" onclick="showModal('modalDell')"><i class="fa fa-angle-right viewIntel"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
@@ -673,7 +712,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                 </ul>
                                 <br />
                                 <h3>The outcome:</h3>
-                                <p>Our team successfully delivered the scenarios, prototypes, findings, analysis, and recommendations for multiple use cases to JLR. The details of this project are under an NDA, so if you&rsquo;d like to learn more, please ask offline.</p>
+                                <p>Our team successfully brought many concepts from 0 to 1, and delivered to JLR detailed experience design principles and design recommendations to help them bring these concepts to life in their cars.</p>
                             </div>
                         </div>
                         <div class="row portfolio-header">
@@ -766,11 +805,6 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                         <ul>
                                             <li>Augmented reality in the car</li>
                                             <li>Connected cars</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        "Out there" ideas:
-                                        <ul>
                                             <li>Conference calls</li>
                                             <li>Integration with fitness devices &amp; outdoor lifestyle</li>
                                         </ul>
@@ -786,7 +820,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <div class="col-lg-8 col-lg-offset-2">
                                 <p class="color-blue">&#x279D;&nbsp;<b>Determining User Needs:</b></p>
                                 <ul>
-                                    <li>Interviewed and observed users to understand current and potential users.</li>
+                                    <li>Interviewed and observed users to understand their needs and pain-points.</li>
                                     <blockquote><i>We spent time at the Portland International Raceway to meet and talk to drivers and experience the racing environment. We learned more about driver behavior, needs and desires, and usage of driving trackers/analyzers and cameras.</i></blockquote>
                                     <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_racetrack.jpg" alt="JLR testing" />
                                     <h4 class="text-center">Talking to racers<i class="fa fa-chevron-up"></i></h4>
@@ -818,6 +852,13 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                                 <p class="color-blue">&#x279D;&nbsp;<b>Wireframing:</b></p>
                                 <ul>
                                     <li>Wireframes and sketches exploring elements of the user experience for each concept were created.</li>
+                                    <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_sketch1.png" alt="JLR sketch" />
+                                    <h4 class="text-center">Sketching: Virtual handbook scenario<i class="fa fa-chevron-up"></i></h4>
+                                    <br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_sketch1.png" alt="JLR sketch" />
+                                    <h4 class="text-center">Sketching: Racing mode scenario<i class="fa fa-chevron-up"></i></h4>
+                                    <br /><br /><img class="lazyload img-responsive img-centered" data-sizes="auto" data-src="dist/assets/images/work/jlr_wireframe_vhb.png" alt="JLR sketch" />
+                                    <h4 class="text-center">Wireframe: Virtual Handbook<i class="fa fa-chevron-up"></i></h4>
+                                    <br />
                                     <li>We regularly tested these designs with users.</li>
                                     <li>The designs were also presented to the clients for their feedback.</li>
                                     <li>User and stakeholder feedback was incorporated into final revisions of the designs.</li>
@@ -865,7 +906,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>JLR IVI</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewLibApp" type="button" title="Previous Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-left viewLibApp"></i> Prev</button><button class="btn btn-default btn-next viewIntel" type="button" title="Next Project" onclick="showModal('modalDell')"><i class="fa fa-angle-right viewIntel"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewLibApp" type="button" title="Previous Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-left viewLibApp"></i> Prev</button><button class="btn btn-default btn-next viewIntel" type="button" title="Next Project" onclick="showModal('modalDell')"><i class="fa fa-angle-right viewIntel"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
@@ -1258,7 +1299,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                             <div class="col-lg-8 col-lg-offset-2">
                                 <ul>
                                     <li>Improve the search and recommendation</li>
-                                    <blockquote><i>How can we improve discoverability of people and content?</i></blockquote>
+                                    <blockquote><i>"How can we improve discoverability of people and content?"</i></blockquote>
                                     <li>
                                         General update of the UI
                                         <ul>
@@ -1348,7 +1389,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewEvolve" type="button" title="Previous Project" onclick="showModal('modalEvolveOutlet')"><i class="fa fa-angle-left viewEvolve"></i> Prev</button><button class="btn btn-default btn-next viewRhizr" type="button" title="Next Project" onclick="showModal('modalRhizr')"><i class="fa fa-angle-right viewRhizr"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewEvolve" type="button" title="Previous Project" onclick="showModal('modalEvolveOutlet')"><i class="fa fa-angle-left viewEvolve"></i> Prev</button><button class="btn btn-default btn-next viewRhizr" type="button" title="Next Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-right viewRhizr"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
@@ -1499,7 +1540,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>EdLab Website</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewEvolve" type="button" title="Previous Project" onclick="showModal('modalEvolveOutlet')"><i class="fa fa-angle-left viewEvolve"></i> Prev</button><button class="btn btn-default btn-next viewRhizr" type="button" title="Next Project" onclick="showModal('modalRhizr')"><i class="fa fa-angle-right viewRhizr"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewEvolve" type="button" title="Previous Project" onclick="showModal('modalEvolveOutlet')"><i class="fa fa-angle-left viewEvolve"></i> Prev</button><button class="btn btn-default btn-next viewRhizr" type="button" title="Next Project" onclick="showModal('modalMisc')"><i class="fa fa-angle-right viewRhizr"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
@@ -1509,7 +1550,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewIntel" type="button" title="Previous Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-left viewIntel"></i> Prev</button><button class="btn btn-default btn-next viewVialogues" type="button" title="Next Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-right viewVialogues"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewIntel" type="button" title="Previous Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-left viewIntel"></i> Prev</button><button class="btn btn-default btn-next viewVialogues" type="button" title="Next Project" onclick="showModal('modalLibApp')"><i class="fa fa-angle-right viewVialogues"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
@@ -1656,7 +1697,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>Dell.com Redesign</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewIntel" type="button" title="Previous Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-left viewIntel"></i> Prev</button><button class="btn btn-default btn-next viewVialogues" type="button" title="Next Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-right viewVialogues"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewIntel" type="button" title="Previous Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-left viewIntel"></i> Prev</button><button class="btn btn-default btn-next viewVialogues" type="button" title="Next Project" onclick="showModal('modalLibApp')"><i class="fa fa-angle-right viewVialogues"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
@@ -1797,7 +1838,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
             <div class="modal-content">
                 <div class="container-fluid">
                     <div class="nav-modal">
-                        <button class="btn btn-default btn-prev viewRhizr" type="button" title="Previous Project" onclick="showModal('modalRhizr')"><i class="fa fa-angle-left viewRhizr"></i> Prev</button><button class="btn btn-default btn-next viewLibWeb" type="button" title="Next Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-right viewLibWeb"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewRhizr" type="button" title="Previous Project" onclick="showModal('modalEdLabWebsite')"><i class="fa fa-angle-left viewRhizr"></i> Prev</button><button class="btn btn-default btn-next viewLibWeb" type="button" title="Next Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-right viewLibWeb"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                     <div class="modal-body">
                         <div class="row portfolio-header">
@@ -1862,7 +1903,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
                         <ul class="list-inline item-details">
                             <li>Project:&nbsp;<strong>Miscellaneous</strong></li>
                         </ul>
-                        <button class="btn btn-default btn-prev viewRhizr" type="button" title="Previous Project" onclick="showModal('modalRhizr')"><i class="fa fa-angle-left viewRhizr"></i> Prev</button><button class="btn btn-default btn-next viewLibWeb" type="button" title="Next Project" onclick="showModal('modalJLR')"><i class="fa fa-angle-right viewLibWeb"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
+                        <button class="btn btn-default btn-prev viewRhizr" type="button" title="Previous Project" onclick="showModal('modalEdLabWebsite')"><i class="fa fa-angle-left viewRhizr"></i> Prev</button><button class="btn btn-default btn-next viewLibWeb" type="button" title="Next Project" onclick="showModal('modalLibWeb')"><i class="fa fa-angle-right viewLibWeb"></i> Next</button><button class="btn btn-default" type="button" data-dismiss="modal" title="Back to all projects"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>

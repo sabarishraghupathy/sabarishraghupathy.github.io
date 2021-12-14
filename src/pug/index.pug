@@ -123,6 +123,14 @@ html(lang='en')
                 hr
             .row
               .col-sm-6.col-lg-4.portfolio-item
+                a.portfolio-link(type='button' data-target='#modalLibWeb' data-toggle='modal')
+                  .caption.viewLibWeb
+                    .caption-content.viewLibWeb
+                      i.fa.fa-search-plus.fa-3x.viewLibWeb
+                  img.img-responsive(src='dist/assets/images/thumbnails/libweb.png' alt='Library Website')
+                p.project-title.text-center Library Website
+                br
+              .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalJLR' data-toggle='modal')
                   .caption.viewJLR
                     .caption-content.viewJLR
@@ -137,14 +145,6 @@ html(lang='en')
                       i.fa.fa-search-plus.fa-3x.viewDell
                   img.img-responsive(src='dist/assets/images/thumbnails/dell.png' alt='Dell')
                 p.project-title.text-center Dell.com Redesign
-                br
-              .col-sm-6.col-lg-4.portfolio-item
-                a.portfolio-link(type='button' data-target='#modalLibWeb' data-toggle='modal')
-                  .caption.viewLibWeb
-                    .caption-content.viewLibWeb
-                      i.fa.fa-search-plus.fa-3x.viewLibWeb
-                  img.img-responsive(src='dist/assets/images/thumbnails/libweb.png' alt='Library Website')
-                p.project-title.text-center Library Website
                 br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalLibApp' data-toggle='modal')
@@ -187,14 +187,14 @@ html(lang='en')
                   img.img-responsive(src='dist/assets/images/thumbnails/edlab.png' alt='EdLab Website')
                 p.project-title.text-center EdLab Website
                 br
-              .col-sm-6.col-lg-4.portfolio-item
-                a.portfolio-link(type='button' data-target='#modalRhizr' data-toggle='modal')
-                  .caption.viewRhizr
-                    .caption-content.viewRhizr
-                      i.fa.fa-search-plus.fa-3x.viewRhizr
-                  img.img-responsive(src='dist/assets/images/thumbnails/rhizr.png' alt='Rhizr')
-                p.project-title.text-center Learning Organization Platform
-                br
+              //- .col-sm-6.col-lg-4.portfolio-item
+              //-   a.portfolio-link(type='button' data-target='#modalRhizr' data-toggle='modal')
+              //-     .caption.viewRhizr
+              //-       .caption-content.viewRhizr
+              //-         i.fa.fa-search-plus.fa-3x.viewRhizr
+              //-     img.img-responsive(src='dist/assets/images/thumbnails/rhizr.png' alt='Rhizr')
+              //-   p.project-title.text-center Learning Organization Platform
+              //-   br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalMisc' data-toggle='modal')
                   .caption.viewMisc
@@ -420,10 +420,10 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-left.viewMisc
                   |  Prev
-                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
+                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-right.viewLibApp
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -436,19 +436,23 @@ html(lang='en')
                     hr
                     p.project-intro
                       | The Gottesman Libraries at Teachers College Columbia University is
-                      | constantly evolving and headed to a future of seamless experiences for patrons. The new
-                      | Library App and updated Library Website are two significant steps on this journey.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_home.jpg' alt='Library Website Homepage')
-                    h4.text-center.color-gray-darker
-                      | New Gottesman Libraries homepage
-                      i.fa.fa-chevron-up
+                      | constantly evolving and headed to a future of seamless experiences for patrons.
+                      br
+                      | Unfortunately, the library's digital presence was still stuck in the past.
+                      | Patrons had no idea how to use it effectively, and the librarians were tired of spending unnecessary time
+                      | helping patrons navigate the clunky system.
                 .row.portfolio-slide.slide-break
                   .col-lg-8.col-lg-offset-2
                     h3 The project:
                     p
                       | Update the existing website and connected systems to enable patrons to easily access
-                      | various library services and resources.
+                      | various library services and resources, such as:
+                    ul
+                      li Library homepage and information pages
+                      li Books, articles, media, research papers, etc.
+                      li Study Rooms
+                      li Online Support
+                      li Search across all the above resources
                     br
                     img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_old.jpg' alt='Old Library Website Home')
                     h4.text-center
@@ -457,48 +461,58 @@ html(lang='en')
                     br
                     h3 My role:
                     p
-                      | As the lead user experience designer, I was responsible for the complete creative
-                      | direction of the project, from conception and research to design and implementation.
+                      | I was the lead designer on this project and was responsible for its complete creative
+                      | execution. I worked closely with a&nbsp;
+                      a(href='https://www.himynameisjo.com/' target='_blank')
+                        | UX researcher
+                      |  for the initial analysis and later
+                      | testing parts. I created the high-fidelity designs, and
+                      | then worked closely with the developers to help implement the designs by
+                      | polishing some functionality and styles.
                     br
-                    h3 The outcome:
-                    p The library successfully migrated to the new systems, including new -
+                    h3 The Outcome:
                     ul
                       li
+                        | The newly launched&nbsp;
                         a(href='https://library.tc.columbia.edu/' target='_blank') Library Website
-                      li CMS [Login Wall]
-                      li Room Reservation System [Login Wall]
+                        | &nbsp;and associated systems have been a huge hit and very popular with the patrons and staff.
                       li
-                        a(href='https://support.library.tc.columbia.edu/support/home' target='_blank') Support Ticket System
+                        | We revised the IA, removed all the extra links, and came up with a simple and clean design
+                        | aesthetic.
                       li
-                        a(href='https://library.tc.columbia.edu/payments/' target='_blank') Payments Gateway
+                        | Patrons were able to discover various library resources on their own and their dependance
+                        |  on the library service staff and front-desk reduced dramatically.
                       li
-                        a(href='http://tc.summon.serialssolutions.com.eduproxy.tc-library.org:8080/#!/' target='_blank') Revamped Serial Solutions Search System
+                        | This project also led to the creation of other related projects, including, a more powerful Room Reservation system,
+                        | a new Payments Gateway, a new Library Archive system (PocketKnowledge), and an improved Super Search system.
+                    br
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_home.jpg' alt='Library Website Homepage')
+                    h4.text-center.color-gray-darker
+                      | New Gottesman Libraries homepage
+                      i.fa.fa-chevron-up
+                    br
                 .row.portfolio-header
                   .col-lg-8.col-lg-offset-2
-                    h2 The Process (highlights):
+                    h2 The Process (Highlights):
                     hr
                     ul
                       li
-                        | STRATEGY
+                        | STRATEGY & RESEARCH
                         ul
-                          li Ideation Sessions
-                          li Determine Roadmap
+                          li Worked with the PM and stakeholders for project conception and requirements gathering
+                          li Evaluated existing systems
+                          li Organized ideation sessions and design jams with PM
+                          li Worked with UX researcher to understand user pain points
                       li
-                        | RESEARCH
+                        | DESIGN & IMPLEMENT
                         ul
-                          li Conduct Initial research
-                          li Contextual Inquiry
-                          li Define our User Models
-                          li Create User Flows
-                      li
-                        | DESIGN AND PROTOTYPE
-                        ul
-                          li Define the Information Architecture
-                          li Wireframe and Prototype designs
-                          li Collect feedback on high-fidelity mockups
-                          li Usability testing
-                          li Visual design
-                          li CSS implementation
+                          li Defined the Information Architecture
+                          li Designed all the interactions and wireframes
+                          li Regularly presented designs to stakeholders for feedback
+                          li Helped the UX researcher with testing the designs and flows
+                          li Refined designs and created final visual designs
+                          li Helped the developers implement the designs by working on the CSS, layouts, fonts, etc.
+                          li Perform regular updates based on feedback from patrons and librarians
                 .row.portfolio-slide.slide-break
                   .col-lg-8.col-lg-offset-2
                     h4 RESEARCH:
@@ -508,22 +522,21 @@ html(lang='en')
                       | &#x279D;&nbsp;
                       b Initial Research and Interviews:
                     ul
-                      li Met with stakeholders at the Library and University.
+                      li Met with stakeholders at the Library and University who shared their vision for the new site.
                       blockquote
                         i "The new system should support self-directed learning." - Library Director
-                      li Did a comparative analysis of other library websites and apps.
+                      li I did a comparative analysis of other library websites and apps.
                       blockquote
                         i
                           | "A unique aspect of this library is the acquisitions are largely
                           | patron-driven. We should highlight this in the new system." - Library Director
-                      li Interviewed patrons to get feedback on the existing library website
+                      li Interviewed patrons to get feedback on the existing library website.
                       blockquote
                         i "There is too much going on throughout the site!" - Patrons
-                      li Evaluated the existing website and Google Analytics data.
                       br
                       img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_clicks.jpg' alt='Library App Home Screen')
                       h4.text-center
-                        | What 90% of the visitors click on&nbsp;
+                        | What 90% of the visitors click on as per analytics data&nbsp;
                         i.fa.fa-chevron-up
                       br
                   .col-lg-8.col-lg-offset-2
@@ -532,10 +545,9 @@ html(lang='en')
                       b Contextual Inquiry with Librarians:
                     ul
                       li
-                        | Observed and interviewed extensively (along with a UX researcher) the current
-                        | &apos;interface&apos; between patrons and the library - the librarians and library staff.
+                        | Observed and interviewed extensively (along with a UX researcher) the librarians and library staff.
                       li
-                        | We got access to the help desk/ticket system, which had a lot of insightful submissions over the years.
+                        | We got access to the old help desk/ticket system, which had a lot of insightful submissions over the years.
                       li
                         | The old website hadn&apos;t changed much in almost a decade so a lot of the site&apos;s flaws
                         | were well known to the library staff.
@@ -554,20 +566,24 @@ html(lang='en')
                       br
                       img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_links.jpg' alt='Library App Home Screen')
                       h4.text-center
-                        | Old website had too many links&nbsp;
+                        | Old website was very text heavy&nbsp;
                         i.fa.fa-chevron-up
+                      br
                     p.color-blue
                       | &#x279D;&nbsp;
                       b User &amp; Task Models:
                     p We are focusing on the following 3 broad types of users:
                     ul
                       li
-                        b The Patron, who avails of various library services.
+                        b The Patron,&nbsp;
+                        | who avails of various library services.
                       li
-                        b The Professor, who requires the library to purchase books and needs to
+                        b The Professor,&nbsp;
+                        | who requires the library to purchase books and needs to
                         | integrate courses with these course readings.
                       li
-                        b The Librarian, who supports the above two users and their requests.
+                        b The Librarian,&nbsp;
+                        | who supports the above two users and their requests.
                   .col-lg-8.col-lg-offset-2
                     br
                     img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_role_model.jpg' alt='Library App Home Screen')
@@ -583,59 +599,133 @@ html(lang='en')
                       | &#x279D;&nbsp;
                       b Information Architecture:
                     ul
-                      li Created a sitemap of the old website
-                      li
-                        | Explored the source repository to map the hundreds of pages and sub-pages within the
+                      li Created a sitemap of the old website and mapped the hundreds of pages and sub-pages within the
                         | old website.
-                      li
-                        | An affinity wall of post-it notes was created to analyze all the pages. We
-                        | purged several categories, re-classified others, and created new categories for all the
-                        | pages.
+                      blockquote
+                        i
+                          | An affinity wall of post-it notes was created to analyze all the pages. We
+                          | purged several categories, re-classified others, and created new categories for all the
+                          | pages.
+                      br
+                  .col-lg-8.col-lg-offset-2
+                    br
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_sitemap.jpg' alt='Library Website Sitemap')
+                    h4.text-center
+                      | Mapping existing pages and relationships
+                      i.fa.fa-chevron-up
+                    br
                   .col-lg-8.col-lg-offset-2
                     p.color-blue
                       | &#x279D;&nbsp;
-                      b Interaction Design / Development:
-                    ul
-                      li Designed multiple wireframe versions of different screens.
-                      li Regularly presented this to the stakeholders for feedback.
-                      li Tested designs with library patrons and staff for usability and feasibility.
-                      li
-                        | I assisted the developers in implementing the finalized designs of the library
-                        | website, CMS, and Payment Gateway.
-                      li Revamped the old WebPAC Pro Summon and Serial Solutions search interfaces.
-                      li Implemented a Freshdesk solution as our new support system.
-                      br
-                      br
+                      b Designing the hompage:
+                    br
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_wireframe1.jpg' alt='Library App Home Screen')
+                    h4.text-center
+                      | Early wireframe showing key items
+                      i.fa.fa-chevron-up
+                    br
+                    br
                   .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/library_home_2.jpg' alt='Library Website Home 1')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_0.jpg' alt='Library Website Home 1')
                   .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/library_home_3.jpg' alt='Library Website Home 2')
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_3.jpg' alt='Library Website Home 2')
                   .col-lg-8.col-lg-offset-2
                     h4.text-center
-                      | Sample of homepage wireframe options
+                      | Sample of homepage options
                       i.fa.fa-chevron-up
+                    br
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_1.jpg' alt='Library Website Home 1')
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_2.jpg' alt='Library Website Home 2')
+                  .col-lg-8.col-lg-offset-2
+                    h4.text-center
+                      | Evolution of homepage
+                      i.fa.fa-chevron-up
+                    br
+                    br
+                  .col-lg-8.col-lg-offset-2
+                    p.color-blue
+                      | &#x279D;&nbsp;
+                      b Super search system:
+                    br
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_0.jpg' alt='Library Search')
+                    h4.text-center
+                      | Search dropdown with matching searches
+                      i.fa.fa-chevron-up
+                    br
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_1.jpg' alt='Library Search 1')
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_2.jpg' alt='Library Search 2')
+                  .col-lg-8.col-lg-offset-2
+                    h4.text-center
+                      | Search results design in progress
+                      i.fa.fa-chevron-up
+                    br
+                    br
+                  .col-lg-8.col-lg-offset-2
+                    p.color-blue
+                      | &#x279D;&nbsp;
+                      b Room reservation system:
+                    br
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_patron1.jpg' alt='Library Room 1')
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_patron2.jpg' alt='Library Room 2')
+                  .col-lg-8.col-lg-offset-2
+                    h4.text-center
+                      | Designing the patron room booking experience
+                      i.fa.fa-chevron-up
+                    br
+                  .col-lg-8.col-lg-offset-2
+                    br
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_admin.jpg' alt='Library Room Admin')
+                    h4.text-center
+                      | Library admins view to book rooms
+                      i.fa.fa-chevron-up
+                    br
+                    br
+                  .col-lg-8.col-lg-offset-2
+                    p.color-blue
+                      | &#x279D;&nbsp;
+                      b Payments system:
+                    br
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_payment1.jpg' alt='Library Payment 1')
+                  .col-lg-6
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_payment2.jpg' alt='Library Payment 2')
+                  .col-lg-8.col-lg-offset-2
+                    h4.text-center
+                      | Designing the patron room booking experience
+                      i.fa.fa-chevron-up
+                    br
                 .row.portfolio-slide
                   .col-lg-8.col-lg-offset-2
-                    h4 THE OUTCOME:
+                    h4 FINAL SOLUTION:
                     hr
                   .col-lg-8.col-lg-offset-2
-                    p The new&nbsp;
-                      a(href='https://library.tc.columbia.edu/' target='_blank') Library Website
-                      | &nbsp;and associated systems have been a huge hit and very popular with the staff, patrons, and other users.
+                    p The library successfully migrated to the new systems, including new -
+                    ul
+                      li
+                        a(href='https://library.tc.columbia.edu/' target='_blank') Library Website
+                      li
+                        a(href='https://support.library.tc.columbia.edu/support/home' target='_blank') Support Ticket System
+                      li
+                        a(href='https://library.tc.columbia.edu/payments/' target='_blank') Payments Gateway
+                      li Room Reservation System [Login Wall]
                     blockquote
-                        i "We constantly get great feedback about the website, and it has
-                        | made life a lot easier for the front-desk staff, with far fewer questions
-                        | about the printer or renewing and requesting books." - Librarians
+                        i "We constantly get great feedback about the website, and it has made life a lot easier for the front-desk staff, with far fewer questions about the printer or paying fines or renewing books." - Librarians
                     br
               .modal-footer
                 ul.list-inline.item-details
                   li
                     | Project:&nbsp;
                     strong Library Website
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-left.viewMisc
                   |  Prev
-                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
+                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-right.viewLibApp
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -647,7 +737,7 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-left.viewLibWeb
                   |  Prev
                 button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
@@ -800,7 +890,7 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Library Mobile App
-                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalDell')")
                   i.fa.fa-angle-left.viewLibWeb
                   |  Prev
                 button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
@@ -815,7 +905,7 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-left.viewLibApp
                   |  Prev
                 button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
@@ -860,9 +950,9 @@ html(lang='en')
                     br
                     h3 The outcome:
                     p
-                      | Our team successfully delivered the scenarios, prototypes, findings, analysis, and
-                      | recommendations for multiple use cases to JLR. The details of this project are under an
-                      | NDA, so if you&rsquo;d like to learn more, please ask offline.
+                      | Our team successfully brought many concepts from 0 to 1, and delivered to JLR
+                      | detailed experience design principles and design recommendations
+                      | to help them bring these concepts to life in their cars.
                 .row.portfolio-header
                   .col-lg-8.col-lg-offset-2
                     h2 The Process:
@@ -946,9 +1036,6 @@ html(lang='en')
                         ul
                           li Augmented reality in the car
                           li Connected cars
-                      li
-                        | "Out there" ideas:
-                        ul
                           li Conference calls
                           li Integration with fitness devices &amp; outdoor lifestyle
                 .row.portfolio-slide.slide-break
@@ -960,7 +1047,7 @@ html(lang='en')
                       | &#x279D;&nbsp;
                       b Determining User Needs:
                     ul
-                      li Interviewed and observed users to understand current and potential users.
+                      li Interviewed and observed users to understand their needs and pain-points.
                       blockquote
                         i
                           | We spent time at the Portland International Raceway to meet and talk to
@@ -1001,6 +1088,23 @@ html(lang='en')
                       b Wireframing:
                     ul
                       li Wireframes and sketches exploring elements of the user experience for each concept were created.
+                      br
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_sketch1.png' alt='JLR sketch')
+                      h4.text-center
+                        | Sketching: Virtual handbook scenario
+                        i.fa.fa-chevron-up
+                      br
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_sketch1.png' alt='JLR sketch')
+                      h4.text-center
+                        | Sketching: Racing mode scenario
+                        i.fa.fa-chevron-up
+                      br
+                      br
+                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_wireframe_vhb.png' alt='JLR sketch')
+                      h4.text-center
+                        | Wireframe: Virtual Handbook
+                        i.fa.fa-chevron-up
+                      br
                       li We regularly tested these designs with users.
                       li The designs were also presented to the clients for their feedback.
                       li User and stakeholder feedback was incorporated into final revisions of the designs.
@@ -1058,7 +1162,7 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong JLR IVI
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-left.viewLibApp
                   |  Prev
                 button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
@@ -1571,14 +1675,12 @@ html(lang='en')
                       li Provide moderators with data and analytics about their vialogues
                       li Improve assessment methods
                       blockquote
-                        i
-                          | How can we improve our polling and question feature to better serve
-                          | learners?
+                        i How can we improve our polling and question feature to better serve learners?
                   .col-lg-8.col-lg-offset-2
                     ul
                       li Improve the search and recommendation
                       blockquote
-                        i How can we improve discoverability of people and content?
+                        i "How can we improve discoverability of people and content?"
                       li
                         | General update of the UI
                         ul
@@ -1692,7 +1794,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
                   i.fa.fa-angle-left.viewEvolve
                   |                         Prev
-                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalRhizr')")
+                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-right.viewRhizr
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -1832,8 +1934,7 @@ html(lang='en')
                       li Organized design events to get ideas from the Teachers College community.
                       blockquote
                         i
-                          | The larger Teachers College community members didn&apos;t know much about
-                          | EdLab.
+                          | The larger Teachers College community members didn&apos;t know much about EdLab.
                     p.color-blue
                       | &#x279D;&nbsp;
                       b Information Architecture / Interaction Design:
@@ -1905,7 +2006,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
                   i.fa.fa-angle-left.viewEvolve
                   |                         Prev
-                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalRhizr')")
+                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalMisc')")
                   i.fa.fa-angle-right.viewRhizr
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -1920,7 +2021,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-left.viewIntel
                   |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibApp')")
                   i.fa.fa-angle-right.viewVialogues
                   |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2117,7 +2218,7 @@ html(lang='en')
                 button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
                   i.fa.fa-angle-left.viewIntel
                   |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibApp')")
                   i.fa.fa-angle-right.viewVialogues
                   |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2297,10 +2398,10 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalRhizr')")
+                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
                   i.fa.fa-angle-left.viewRhizr
                   |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-right.viewLibWeb
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
@@ -2380,10 +2481,10 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Miscellaneous
-                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalRhizr')")
+                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
                   i.fa.fa-angle-left.viewRhizr
                   |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
                   i.fa.fa-angle-right.viewLibWeb
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
