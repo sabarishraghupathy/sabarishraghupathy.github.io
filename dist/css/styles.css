@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Freelancer v6.0.2 (https://startbootstrap.com/themes/freelancer)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
 */
 body {
@@ -14,12 +14,18 @@ body {
   background-color: #2c3e500a;
 }
 
+.container-fullwidth {
+  max-width: 100%;
+  background-color: #2c3e500a;
+}
+
 p {
   font-size: 20px;
   font-weight: 300;
 }
 
-ul, i {
+ul,
+i {
   font-weight: 300;
 }
 
@@ -79,7 +85,12 @@ a.btn-livesite:hover {
   border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -219,7 +230,12 @@ section h2 {
 .portfolio-slide {
   min-height: 600px;
   padding: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+.container-fullwidth .portfolio-slide {
+  min-height: 0px;
+  padding: 10px;
 }
 
 .slide-break {
@@ -234,6 +250,10 @@ section h2 {
 }
 .portfolio-header li {
   color: #2C3E50;
+}
+
+.container-fullwidth .portfolio-header {
+  padding: 10px;
 }
 
 section.success {
@@ -447,6 +467,11 @@ footer .footer-below {
   height: 50px;
   border-radius: 100%;
   line-height: 28px;
+}
+
+.container-fullwidth img {
+  width: 100% !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .portfolio-modal .modal-content {

@@ -119,87 +119,77 @@ html(lang='en')
           .container
             .row
               .col-lg-12.text-center
-                h3 My work
+                h3 Featured work
                 hr
             .row
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalLibWeb' data-toggle='modal')
-                  .caption.viewLibWeb
-                    .caption-content.viewLibWeb
-                      i.fa.fa-search-plus.fa-3x.viewLibWeb
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/libweb.png' alt='Library Website')
                 p.project-title.text-center Modernization of Library Ecosystem
                 br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalJLR' data-toggle='modal')
-                  .caption.viewJLR
-                    .caption-content.viewJLR
-                      i.fa.fa-search-plus.fa-3x.viewJLR
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/jlr.png' alt='JLR')
                 p.project-title.text-center In-Vehicle-Infotainment & Future Concepts
                 br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalDell' data-toggle='modal')
-                  .caption.viewDell
-                    .caption-content.viewDell
-                      i.fa.fa-search-plus.fa-3x.viewDell
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/dell.png' alt='Dell')
                 p.project-title.text-center Dell.com Redesign
                 br
-              .col-sm-6.col-lg-4.portfolio-item
-                a.portfolio-link(type='button' data-target='#modalLibApp' data-toggle='modal')
-                  .caption.viewLibApp
-                    .caption-content.viewLibApp
-                      i.fa.fa-search-plus.fa-3x.viewLibApp
-                  img.img-responsive(src='dist/assets/images/thumbnails/libapp.png' alt='Library App')
-                p.project-title.text-center New Library Mobile App
-                br
+        section#portfolio
+          .container
+            .row
+              .col-lg-12.text-center
+                h3 Other work
+                hr
+            .row
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalIntel' data-toggle='modal')
-                  .caption.viewIntel
-                    .caption-content.viewIntel
-                      i.fa.fa-search-plus.fa-3x.viewIntel
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/intel.png' alt='Intel Internet of Things')
                 p.project-title.text-center Experience Internet of Things
                 br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalVialogues' data-toggle='modal')
-                  .caption.viewVialogues
-                    .caption-content.viewVialogues
-                      i.fa.fa-search-plus.fa-3x.viewVialogues
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/vialogues.png' alt='Vialogue')
                 p.project-title.text-center Asynchronous Video Discussion Tool
                 br
-            .row
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalEvolveOutlet' data-toggle='modal')
-                  .caption.viewEvolve
-                    .caption-content.viewEvolve
-                      i.fa.fa-search-plus.fa-3x.viewEvolve
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/evolveoutlet.png' alt='Evolve Outlet')
                 p.project-title.text-center Electrical Outlet Redesign
                 br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalEdLabWebsite' data-toggle='modal')
-                  .caption.viewEdLab
-                    .caption-content.viewEdLab
-                      i.fa.fa-search-plus.fa-3x.viewEdLab
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/edlab.png' alt='EdLab Website')
                 p.project-title.text-center EdLab Website Redesign
                 br
-              //- .col-sm-6.col-lg-4.portfolio-item
-              //-   a.portfolio-link(type='button' data-target='#modalRhizr' data-toggle='modal')
-              //-     .caption.viewRhizr
-              //-       .caption-content.viewRhizr
-              //-         i.fa.fa-search-plus.fa-3x.viewRhizr
-              //-     img.img-responsive(src='dist/assets/images/thumbnails/rhizr.png' alt='Rhizr')
-              //-   p.project-title.text-center Learning Organization Platform
-              //-   br
               .col-sm-6.col-lg-4.portfolio-item
                 a.portfolio-link(type='button' data-target='#modalMisc' data-toggle='modal')
-                  .caption.viewMisc
-                    .caption-content.viewMisc
-                      i.fa.fa-search-plus.fa-3x.viewMisc
+                  .caption
+                    .caption-content
+                      i.fa.fa-search-plus.fa-3x
                   img.img-responsive(src='dist/assets/images/thumbnails/misc.png' alt='Miscellaneous')
                 p.project-title.text-center Samples From Other Projects
                 br
@@ -413,521 +403,94 @@ html(lang='en')
           a.btn.btn-primary(href='#page-top')
             i.fa.fa-chevron-up
 
-        // Portfolio Modals
+        // Full-width Modals
 
-        // **** LIBRARY WEB ****
         #modalLibWeb.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
           .modal-content
-            .container-fluid
+            .container-fullwidth
               .nav-modal
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-left.viewMisc
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalJLR')")
-                  i.fa.fa-angle-right.viewLibApp
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
               .modal-body
                 .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
+                  .col-lg-12
                     h2 Modernization of Library Ecosystem
                     hr
-                    p.project-intro
-                      | The Gottesman Libraries at Teachers College Columbia University is
-                      | constantly evolving and headed to a future of seamless experiences for patrons.
-                      br
-                      | Unfortunately, the library's digital presence was still stuck in the past.
-                      | Patrons had no idea how to use it effectively, and the librarians were tired of spending unnecessary time
-                      | helping patrons navigate the clunky system.
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_1.jpg' alt='Library Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h3 The project:
-                    p
-                      | Update the existing website and related systems into a unified ecosystem that enables patrons to easily access
-                      | various library services and resources, such as:
-                    ul
-                      li Library homepage and information pages
-                      li Books, articles, media, research papers, etc.
-                      li Study Rooms
-                      li Online Support
-                      li Search across all the above resources
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_old.jpg' alt='Old Library Website Home')
-                    h4.text-center
-                      | Old Gottesman Libraries homepage
-                      i.fa.fa-chevron-up
-                    br
-                    h3 My role:
-                    p
-                      | I was the lead designer on this project and was responsible for its complete creative
-                      | execution. I worked closely with a&nbsp;
-                      a(href='https://www.himynameisjo.com/' target='_blank')
-                        | UX researcher
-                      |  for the initial analysis and later
-                      | testing parts. I created the high-fidelity designs and
-                      | then worked closely with the developers to help implement the designs by
-                      | polishing some functionality and styles.
-                    br
-                    h3 The Outcome:
-                    ul
-                      li
-                        | The newly launched&nbsp;
-                        a(href='https://library.tc.columbia.edu/' target='_blank') Library Website
-                        | &nbsp;and associated systems have been a huge hit and very popular with the patrons and staff.
-                      li
-                        | We revised the IA, removed all the extra links, and came up with a simple and clean design
-                        | aesthetic.
-                      li
-                        | Patrons were able to discover various library resources on their own and their dependence
-                        |  on the library service staff and front-desk reduced dramatically.
-                      li
-                        | This project also led to the creation of other related projects, including, a new Mobile App, a more powerful Room Reservation system,
-                        | a new Payments Gateway, a new Library Archive system (PocketKnowledge), and an improved Super Search system.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_home.jpg' alt='Library Website Homepage')
-                    h4.text-center.color-gray-darker
-                      | New Gottesman Libraries homepage
-                      i.fa.fa-chevron-up
-                    br
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process (Highlights):
-                    hr
-                    ul
-                      li
-                        | STRATEGY & RESEARCH
-                        ul
-                          li Worked with the PM and stakeholders for project conception and requirements gathering
-                          li Evaluated existing systems
-                          li Organized ideation sessions and design jams with PM
-                          li Worked with UX researcher to understand user pain points
-                      li
-                        | DESIGN & IMPLEMENT
-                        ul
-                          li Defined the Information Architecture
-                          li Designed all the interactions and wireframes
-                          li Regularly presented designs to stakeholders for feedback
-                          li Helped the UX researcher with testing the designs and flows
-                          li Refined designs and created final visual designs
-                          li Helped the developers implement the designs by working on the CSS, layouts, fonts, etc.
-                          li Perform regular updates based on feedback from patrons and librarians
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_2.jpg' alt='Library Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 RESEARCH:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Initial Research and Interviews:
-                    ul
-                      li Met with stakeholders at the Library and University who shared their vision for the new site.
-                      blockquote
-                        i "The new system should support self-directed learning." - Library Director
-                      li I did a comparative analysis of other library websites and apps.
-                      blockquote
-                        i
-                          | "A unique aspect of this library is the acquisitions are largely
-                          | patron-driven. We should highlight this in the new system." - Library Director
-                      li Interviewed patrons to get feedback on the existing library systems.
-                      blockquote
-                        i "There is too much going on throughout the site!" - Patrons
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_clicks.jpg' alt='Library App Home Screen')
-                      h4.text-center
-                        | What 90% of the visitors click on as per analytics data&nbsp;
-                        i.fa.fa-chevron-up
-                      br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Contextual Inquiry with Librarians:
-                    ul
-                      li
-                        | Observed and interviewed extensively (along with a UX researcher) the librarians and library staff.
-                      li
-                        | We got access to the old help desk/ticket system, which had a lot of insightful submissions over the years.
-                      li
-                        | The old website hadn&apos;t changed much in almost a decade so a lot of the site&apos;s flaws
-                        | were well known to the library staff.
-                      blockquote
-                        i
-                          | "We would tell patrons to click the 1st column, 7th row, 2nd link,
-                          | to get to the fine payment system!" - Librarians
-                      li
-                        | The library staff empathizes with what patrons are looking for and gave valuable
-                        | insight into how they are currently being helped.
-                      blockquote
-                        i
-                          | "Many patrons would just bring all their books in physically to renew them
-                          | rather than use the online system. Most weren&apos;t even aware of the online
-                          | system!"  - Librarians
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_links.jpg' alt='Library App Home Screen')
-                      h4.text-center
-                        | Old website was very text heavy&nbsp;
-                        i.fa.fa-chevron-up
-                      br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b User &amp; Task Models:
-                    p We are focusing on the following 3 broad types of users:
-                    ul
-                      li
-                        b The Patron,&nbsp;
-                        | who avails of various library services.
-                      li
-                        b The Professor,&nbsp;
-                        | who requires the library to purchase books and needs to
-                        | integrate courses with these course readings.
-                      li
-                        b The Librarian,&nbsp;
-                        | who supports the above two users and their requests.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_role_model.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | User &amp; Task model
-                      i.fa.fa-chevron-up
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_3.jpg' alt='Library Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 DESIGN AND PROTOTYPE:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Information Architecture:
-                    ul
-                      li Created a sitemap of the old website and mapped the hundreds of pages and sub-pages within the old website.
-                      blockquote
-                        i
-                          | An affinity wall of post-it notes was created to analyze all the pages. We
-                          | purged several categories, re-classified others, and created new categories for all the
-                          | pages.
-                      br
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_sitemap.jpg' alt='Library Website Sitemap')
-                    h4.text-center
-                      | Mapping existing pages and relationships
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Designing the homepage:
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_wireframe1.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | Early wireframe showing key items
-                      i.fa.fa-chevron-up
-                    br
-                    br
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_0.jpg' alt='Library Website Home 1')
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_3.jpg' alt='Library Website Home 2')
-                  .col-lg-8.col-lg-offset-2
-                    h4.text-center
-                      | Sample of homepage options
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | "The homepage needs to be informative and simple" - Stakeholder
-                    br
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_1.jpg' alt='Library Website Home 1')
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_homepage_2.jpg' alt='Library Website Home 2')
-                  .col-lg-8.col-lg-offset-2
-                    h4.text-center
-                      | Evolution of homepage
-                      i.fa.fa-chevron-up
-                    br
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Super search system:
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_0.jpg' alt='Library Search')
-                    h4.text-center
-                      | Search dropdown with matching searches
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_1.jpg' alt='Library Search 1')
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_search_2.jpg' alt='Library Search 2')
-                  .col-lg-8.col-lg-offset-2
-                    h4.text-center
-                      | Search results design in progress
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | "We need a central system to search all our resources" - Library Staff
-                    br
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Room reservation system:
-                    br
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_patron1.jpg' alt='Library Room 1')
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_patron2.jpg' alt='Library Room 2')
-                  .col-lg-8.col-lg-offset-2
-                    h4.text-center
-                      | Designing the patron room booking experience
-                      i.fa.fa-chevron-up
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app2.jpg' alt='Library Room Admin')
-                    h4.text-center
-                      | iPads outside every study room displays the room status
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | "The new system is great since we no longer have to maintain spreadsheets for room reservations, and students can see for themselves which room is available, and when" - Library Staff
-                    br
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_room_admin.jpg' alt='Library Room Admin')
-                    h4.text-center
-                      | Library admins view to book rooms
-                      i.fa.fa-chevron-up
-                    br
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Payments system:
-                    br
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_payment1.jpg' alt='Library Payment 1')
-                  .col-lg-6
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_payment2.jpg' alt='Library Payment 2')
-                  .col-lg-8.col-lg-offset-2
-                    h4.text-center
-                      | Designing the payment system
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | "The payment categories and PayPal integration in our new payments system makes it easier for me to reconcile our budget" - Library Director
-                    br
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 FINAL SOLUTION:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p The library successfully migrated to the new systems, including new -
-                    ul
-                      li
-                        a(href='https://library.tc.columbia.edu/' target='_blank') Library Website & Blog
-                      li
-                        a(href='https://support.library.tc.columbia.edu/support/home' target='_blank') Support Ticket System
-                      li
-                        a(href='https://library.tc.columbia.edu/payments/' target='_blank') Payments Gateway
-                      li Room Reservation System [Login Wall]
-                      li Super Search
-                      li
-                        a(href='#' onclick="showModal('modalLibApp')") New Mobile App
-                      li A CMS that supports all of the above and makes it easier to manage pages, content, users, staff, and hours.
-                      li We continue to monitor user feedback and new needs and make regular updates to the site.
-                      br
-                    blockquote
-                        i "We constantly get great feedback about the website, and it has made life a lot easier for the front-desk staff, with far fewer questions about the printer or paying fines or renewing books." - Librarians
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_web_home2021.png' alt='Library Home 2021')
-                    h4.text-center
-                      | The current homepage design
-                      i.fa.fa-chevron-up
-                    br
-                    br
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_4.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_5.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_6.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_7.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_8.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_9.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_10.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_11.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_12.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_13.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_14.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_15.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_16.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_17.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_18.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_19.jpg' alt='Library Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/library_20.jpg' alt='Library Design')
               .modal-footer
                 ul.list-inline.item-details
                   li
                     | Project:&nbsp;
                     strong Library Website
-                button.btn.btn-default.btn-prev.viewMisc(type='button' title='Previous Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-left.viewMisc
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalMisc')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalJLR')")
-                  i.fa.fa-angle-right.viewLibApp
-                  |  Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-
-        // **** LIBRARY APP ****
-        #modalLibApp.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
-          .modal-content
-            .container-fluid
-              .nav-modal
-                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalDell')")
-                  i.fa.fa-angle-left.viewLibWeb
-                  |  Prev
-                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
-                  i.fa.fa-angle-right.viewJLR
-                  |  Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-              .modal-body
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 New Library Mobile App
-                    hr
-                    p.project-intro
-                      | The Gottesman Libraries at Teachers College Columbia University is
-                      | constantly evolving and headed to a future of seamless experiences for patrons. The new
-                      | Library App and updated Library Website are two significant steps on this journey.
-                    br
-                    .text-center
-                      iframe(src='https://www.vialogues.com/videos/embedded/46822/' width='540' height='360' frameborder='0' scrolling='No' allowfullscreen='')
-                    h4.text-center.color-gray-darker
-                      | Demo of Mobile App Prototype
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h3 The project:
-                    p
-                      | Design a new app to enable patrons to easily access various library services and
-                      | resources.
-                    br
-                    h3 My role:
-                    p
-                      | As the lead user experience designer, I was responsible for the complete creative
-                      | direction of the project, from conception and research to design and implementation.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app.jpg' alt='Library App Home and More')
-                    h4.text-center
-                      | New Library Mobile App
-                      i.fa.fa-chevron-up
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process (highlights):
-                    hr
-                    ul
-                      li
-                        | RESEARCH
-                        ul
-                          li Conduct Initial Research
-                          li Create User Flows
-                      li
-                        | DESIGN AND DEVELOPMENT
-                        ul
-                          li Define the Information Architecture
-                          li Wireframe and Prototype designs
-                          li Collect feedback on high-fidelity mockups
-                          li Usability testing
-                          li Visual design
-                          li CSS implementation
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 RESEARCH &amp; DESIGN
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Use Cases and User Flows:
-                    ul
-                      li A lot of our research and ideas came from the&nbsp;
-                        a(href='#' onclick="showModal('modalLibWeb')") Library Ecosystem Project.
-                      li Stakeholders and patrons had given their expectations from a mobile app.
-                      blockquote
-                        i
-                          | "We want the mobile app to initially compliment the website and later
-                          | become the default way that patrons interact with the Library" - Library Staff
-                      br
-                      li We created multiple use cases and detailed them out as shown below -
-                  .col-lg-6.col-lg-offset-3
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_usecase_1.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | How to locate a book in the stacks use case
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Information Architecture
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_ia.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | App Screens / Architecture
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Interaction Design:
-                    ul
-                      li
-                        | I designed multiple wireframes detailing based on the use cases that were developed.
-                  .col-lg-8.col-lg-offset-2
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_shelf_1.jpg' alt='Library App My Shelf')
-                    h4.text-center
-                      | Early mockups of &apos;My Items&apos;
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | "Making it easier for patrons to see items they have requested or checked-out,
-                        | and take contextual actions is an important requirement." - Librarians
-                    ul
-                      li
-                        | I had to detail out a lot of interactions on the various screens. Shown below is
-                        | what the single item (book/ebook/article) view looked like, followed by the various
-                        | options for that view.
-                  .col-lg-6.col-lg-offset-3
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_wires.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | Single Book Wireframe
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_singlepage.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | Single Page Options
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    ul
-                      li
-                        | The room reservation system was a powerful new feature and had its own use cases and flows.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/lib_app_roomflow.jpg' alt='Library App Home Screen')
-                    h4.text-center
-                      | Room Reservation Flow
-                      i.fa.fa-chevron-up
-                    br
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 THE OUTCOME:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p The new Library App has been a great companion to the new library website and is going to get more powerful.
-                    blockquote
-                        i "We love the easy-to-use room booking system on the app" - Patrons
-                    br
-              .modal-footer
-                ul.list-inline.item-details
-                  li
-                    | Project:&nbsp;
-                    strong Library Mobile App
-                button.btn.btn-default.btn-prev.viewLibWeb(type='button' title='Previous Project' onclick="showModal('modalDell')")
-                  i.fa.fa-angle-left.viewLibWeb
-                  |  Prev
-                button.btn.btn-default.btn-next.viewJLR(type='button' title='Next Project' onclick="showModal('modalIntel')")
-                  i.fa.fa-angle-right.viewJLR
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalJLR')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
@@ -936,287 +499,141 @@ html(lang='en')
         // **** JLR ****
         #modalJLR.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
           .modal-content
-            .container-fluid
+            .container-fullwidth
               .nav-modal
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
-                  i.fa.fa-angle-left.viewLibApp
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
-                  i.fa.fa-angle-right.viewIntel
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalDell')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
               .modal-body
                 .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
+                  .col-lg-12
                     h2 In-Vehicle-Infotainment & Future Concepts
                     hr
-                    p.project-intro
-                      | Jaguar Land Rover&apos;s future technology research team&apos;s mission is to
-                      | improve the user experience across a range of features within JLR automobiles, centered
-                      | on the In-Vehicle Infotainment (IVI) system.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_center.jpg' alt='JLR testing')
-                    h4.text-center.color-gray-darker
-                      | Testing setup at JLR&apos;s Portland research center
-                      i.fa.fa-chevron-up
-                    p.small.text-center
-                      a(href='https://www.wildelandroversarasota.com/jlr-expanding-portland-research-center/' target='_blank') Image Source
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_1.jpg' alt='JLR Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h3 The project:
-                    p
-                      | Rethink JLR&apos;s In-Vehicle Infotainment systems and explore future product concepts and
-                      | usages in a highly interconnected, Internet-of-things, augmented reality world.
-                    br
-                    h3 My Role:
-                    p As a User Experience designer, I was responsible for -
-                    ul
-                      li Designing and developing IVI and surrounding experiences based on an intimate understanding of consumer electronics,
-                        |  UI concepts, and the automotive context.
-                      li Developing functional HTML prototypes.
-                      li Presenting these designs and prototypes regularly to our clients and stakeholders for feedback.
-                      li Work with UX researchers to analyze feedback from user testing and focus group sessions.
-                      li Revisit the designs based on user and stakeholder feedback.
-                      li Summarize the design recommendations, specifications, and documentation for each use case.
-                    br
-                    h3 The outcome:
-                    p
-                      | Our team successfully brought many concepts from 0 to 1, and delivered to JLR
-                      | detailed experience design principles and design recommendations
-                      | to help them bring these concepts to life in their cars.
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process:
-                    hr
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_process.jpg' alt='JLR Process')
-                    br
-                    //- ul
-                    //-   li
-                    //-     | STRATEGY / EXPLORATORY PHASE
-                    //-     ul
-                    //-       li Stakeholder meetings to determine project scope
-                    //-       li Organize design thinking sessions with JLR stakeholders + engineers + designers
-                    //-       li Develop IVI use cases
-                    //-   li
-                    //-     | RESEARCH
-                    //-     ul
-                    //-       li Determine user needs
-                    //-       li Explore and develop usage models and scenarios
-                    //-   li
-                    //-     | DESIGN AND PROTOTYPE
-                    //-     ul
-                    //-       li Design wireframes and revise after client feedback
-                    //-       li Work closely with visual designers on high fidelity designs
-                    //-       li Develop functional prototypes for testing in cars
-                    //-   li
-                    //-     | DELIVERABLES
-                    //-     ul
-                    //-       li Create detailed interaction design specs
-                    //-       li Provide the team with a feasibility analysis and design recommendations.
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 STRATEGY:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Stakeholder Meetings:
-                    ul
-                      li Our team met with JLR employees to learn about their vision and expectations.
-                      li We walked through the existing IVI systems and limitations.
-                      li JLR was looking to develop detailed IVI use case concepts and designs around it.
-                      li Each use case concept needed to be completely detailed out, with user models,
-                        |  scenarios, storyboards, design intent, and recommendations, functioning prototypes,
-                        | and high fidelity visual designs.
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Design thinking sessions
-                    ul
-                      li The team organized multi-day ideation sessions with JLR engineers, designers, project managers, and other stakeholders.
-                      li Several ideas were generated and presented and voted upon.
-                      li The final list of use cases were developed in detail.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_designthink.png' alt='JLR testing')
-                    h4.text-center
-                      | Ideas from Design Thinking sessions
-                      i.fa.fa-chevron-up
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_2.jpg' alt='JLR Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Developed IVI Use Cases / Concepts:
-                    p
-                      | I was personally involved in the following use case concepts (which were each large and complex projects on their own) over the course of two years:
-                    ul
-                      li
-                        | Technology upgrades:
-                        ul
-                          li Updated media experiences (front and back seat) [
-                            a(href="https://docs.google.com/document/d/1VUhXXUO3hJMxBpqJXziEyUHjt5F1So6QpqN8yiMpMxA/edit?usp=sharing") View Task + Deliverables Schedule
-                            | ]
-                          li Smartphone integration
-                          li Digitizing the handbook
-                          li Delivering Software updates OTA (Over The Air)
-                      li
-                        | "New" features:
-                        ul
-                          li Track/Record/Replay/Analyze driving
-                          li Camera uses in the car
-                          li In-car ambiance and settings based on mood/context
-                      li
-                        | Future tech:
-                        ul
-                          li Augmented reality in the car
-                          li Connected cars
-                          li Conference calls
-                          li Integration with fitness devices &amp; outdoor lifestyle
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_3.jpg' alt='JLR Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 RESEARCH:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Determining User Needs:
-                    ul
-                      li Interviewed and observed users to understand their needs and pain points.
-                      blockquote
-                        i
-                          | We spent time at the Portland International Raceway to meet and talk to
-                          | drivers and experience the racing environment. We learned more about driver
-                          | behavior, needs and desires, and usage of driving trackers/analyzers and
-                          | cameras.
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_racetrack.jpg' alt='JLR testing')
-                      h4.text-center
-                        | Talking to racers
-                        i.fa.fa-chevron-up
-                      li Brainstormed various ideas that could be explored with current and potential JLR customers.
-                      li Our team conducted focus groups to understand current in-vehicle behavior as it relates to our use case concepts.
-                      li We then created role models and usage models based on these user sessions.
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_taskmodel.jpg' alt='JLR testing')
-                    h4.text-center
-                      | Ideation sessions
-                      i.fa.fa-chevron-up
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Scenarios:
-                    ul
-                      li We created detailed scenarios for different use cases and reviewed them regularly with the clients.
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_flow.jpg' alt='JLR testing')
-                    h4.text-center
-                      | A Use Case Interaction Flow with Visuals
-                      i.fa.fa-chevron-up
-                    br
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 DESIGN AND PROTOTYPE:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Wireframing:
-                    ul
-                      li Wireframes and sketches exploring elements of the user experience for each concept were created.
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_sketch1.png' alt='JLR sketch')
-                      h4.text-center
-                        | Sketching: Virtual handbook scenario
-                        i.fa.fa-chevron-up
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_sketch2.png' alt='JLR sketch')
-                      h4.text-center
-                        | Sketching: Racing mode scenario
-                        i.fa.fa-chevron-up
-                      br
-                      br
-                      img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_wireframe_vhb.png' alt='JLR sketch')
-                      h4.text-center
-                        | Wireframe: Virtual Handbook
-                        i.fa.fa-chevron-up
-                      br
-                      li We regularly tested these designs with users.
-                      li The designs were also presented to the clients for their feedback.
-                      li User and stakeholder feedback was incorporated into final revisions of the designs.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Interactive HTML Prototypes:
-                    ul
-                      li
-                        | After the designs went through their iterations, the final visual design was applied
-                        | and interactive prototypes were developed.
-                      li
-                        | The final prototypes were again tested with users to validate the concepts and
-                        | design.
-                      li
-                        | Users were able to interact with the prototypes on the vehicle touchscreen at the JLR testing facility.
-                .col-lg-6.col-lg-offset-3
-                  img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/jlr_testing.jpg' alt='JLR testing')
-                  h4.text-center
-                    | User Testing our interactive prototypes
-                    i.fa.fa-chevron-up
-                  br
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_4.jpg' alt='JLR Design')
                 .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Testing:
-                    ul
-                      li
-                        | Participants for each session were recruited with different backgrounds including luxury vehicle ownership, tech
-                        | usage in and out of the vehicle, media consumption habits, and having children who also consume media in the vehicle.
-                      li
-                        | The overall goals of each evaluation session were
-                        ul
-                          li Assess appeal to the concepts overall
-                          li Assess usability/design of the concepts
-                          li
-                            | Gather insights to improve usability, design, and functionality of the
-                            | concepts being evaluated or for future concepts
-                    blockquote
-                      i
-                        | Each user session consisted of a 1:1 interview in the vehicle. Users walked
-                        | through different use case scenarios and provided feedback on the design in terms of
-                        | features, functionality, usability, and overall appeal of the concepts.
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 THE OUTCOME:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p
-                      | Our team successfully delivered the scenarios, prototypes, findings, analysis, and
-                      | recommendations for multiple use cases to JLR.
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_x.jpg' alt='JLR Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_21.jpg' alt='JLR Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/jlr_22.jpg' alt='JLR Design')
               .modal-footer
                 ul.list-inline.item-details
                   li
                     | Project:&nbsp;
                     strong JLR IVI
-                button.btn.btn-default.btn-prev.viewLibApp(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
-                  i.fa.fa-angle-left.viewLibApp
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalLibWeb')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewIntel(type='button' title='Next Project' onclick="showModal('modalDell')")
-                  i.fa.fa-angle-right.viewIntel
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalDell')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
+
+        // **** Dell ****
+        #modalDell.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+          .modal-content
+            .container-fullwidth
+              .nav-modal
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalJLR')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalIntel')")
+                  i.fa.fa-angle-right
+                  |  Next
+                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
+                  i.fa.fa-times
+                  |  Close
+              .modal-body
+                .row.portfolio-header
+                  .col-lg-12
+                    h2 RETHINKING DELL.COM IA
+                    hr
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_1.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_2.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_3.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_4.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_5.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_6.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_7.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_8.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_9.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_10.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_11.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_12.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_13.jpg' alt='Dell Design')
+                .row.portfolio-slide.slide-break
+                  .col-lg-12
+                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/new/dell_14.jpg' alt='Dell Design')
+              .modal-footer
+                ul.list-inline.item-details
+                  li
+                    | Project:&nbsp;
+                    strong Dell.com Redesign
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalJLR')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalIntel')")
+                  i.fa.fa-angle-right
+                  |  Next
+                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
+                  i.fa.fa-times
+                  |  Close
+        // Portfolio Modals
 
         // **** Intel IOT ****
         #modalIntel.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
-                  i.fa.fa-angle-left.viewJLR
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalVialogues')")
-                  i.fa.fa-angle-right.viewDell
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalVialogues')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
@@ -1384,220 +801,12 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Intel IoT
-                button.btn.btn-default.btn-prev.viewJLR(type='button' title='Previous Project' onclick="showModal('modalLibApp')")
-                  i.fa.fa-angle-left.viewJLR
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalDell')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewDell(type='button' title='Next Project' onclick="showModal('modalVialogues')")
-                  i.fa.fa-angle-right.viewDell
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalVialogues')")
+                  i.fa.fa-angle-right
                   |  Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-
-        // **** Rhizr ****
-        #modalRhizr.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
-          .modal-content
-            .container-fluid
-              .nav-modal
-                button.btn.btn-default.btn-prev.viewEdLab(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-left.viewEdLab
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewMisc(type='button' title='Next Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-right.viewMisc
-                  |                         Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-              .modal-body
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 Rhizr
-                    hr
-                    p.project-intro
-                      | Rhizr is a collection of learning opportunities linked together to
-                      | support serendipitous discovery. Use it to create, organize, reuse, and remix content.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_home.jpg' alt='Rhizr View')
-                    h4.text-center.color-gray-darker
-                      | Responsive Rhizr Designs
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h3 The project:
-                    p Design a new learning and organization interface.
-                    br
-                    blockquote
-                      i
-                        | Rhizomatic learning is a way of thinking about learning based on ideas
-                        | described by Gilles Deleuze and Felix Guattari. A rhizome is a stem of a plant that
-                        | sends out roots and shoots as it spreads. Similarly, in Rhizomatic learning, ideas
-                        | are multiple, interconnected and self-replicating.
-                    br
-                    h3 My role:
-                    p
-                      | This was one of my first projects at EdLab. As a user experience designer, I used this
-                      | opportunity to introduce various UX methods to the team. Then as a user interface
-                      | developer, I also helped develop this project. I worked with a project manager and two
-                      | developers on this project.
-                    br
-                    h3 The Outcome:
-                    ul
-                      li
-                        | Rhizr was successfully released to a limited audience for analysis, testing,
-                        | tracking usage patterns, and to populate with content.
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process (Highlights):
-                    hr
-                    ul
-                      li
-                        | STRATEGY
-                        ul
-                          li Analysis of initial direction
-                      li
-                        | RESEARCH
-                        ul
-                          li Design thinking sessions
-                          li Brainstorming and ideation sessions
-                          li Interviewing potential users and creating user models
-                      li
-                        | DESIGN AND IMPLEMENT
-                        ul
-                          li Design wireframes
-                          li UI development
-                          li Usability testing
-                      li
-                        | NEXT STEPS
-                        ul
-                          li Iterate
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 STRATEGY:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Dissect &apos;mSchool&apos;:
-                    ul
-                      li
-                        | Rhizr had started off as &apos;mSchool&apos;, a project about learning through metaphors. It
-                        | had hit a roadblock as the initial ideas around it were found to be insufficient and
-                        | it needed a new creative direction.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Brainstorming / Design thinking:
-                    ul
-                      li
-                        | With the help of the product manager, the dev team, and some design thinking sessions
-                        | we came up with a revised idea for the project and a new name, &apos;Rhizr.&apos;
-                    blockquote
-                      i
-                        | Rhizr strives to create &quot;a learning environment in which the student can
-                        | learn to restructure the new information and their prior knowledge into new
-                        | knowledge about the content and to practice using it&quot; - Dean A. McManus
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_about.jpg' alt='Rhizr View')
-                    h4.text-center
-                      | Concept of Rhizr
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 RESEARCH:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Determining User Needs / Task Flows:
-                    ul
-                      li
-                        | Spoke to educators, students, and researchers about e-learning platforms, online
-                        | learning, creating and sharing learning content online.
-                      li
-                        | We determined there are potentially three primary types of users for Rhizr - the
-                        | creator, the passive learner, and the active learner.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_userroles.jpg' alt='Rhizr User Model')
-                    h4.text-center
-                      | New user models
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Determining User Needs / Task Flows:
-                    ul
-                      li I mapped out user needs and goals and created task flows.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_createflow.jpg' alt='Rhizr User Flow')
-                    h4.text-center
-                      | A Task flow - Creating a new Rhizr
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 DESIGN AND IMPLEMENT:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Information Architecture / Interaction Design:
-                    ul
-                      li
-                        | We analyzed different layouts, including hierarchical layout, topological layouts,
-                        | various grid and canvas layouts, before we settled on the simple column layout.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_view.jpg' alt='Rhizr View')
-                    h4.text-center
-                      | Wireframe of a Rhizr with Nodes and Roots
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Bootstrap Framework + Meteor JavaScript:
-                    ul
-                      li
-                        | As we were a small team and since I have UI development experience, I helped in
-                        | developing the beta version using the Bootstrap framework and Meteor JavaScript
-                        | platform.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Testing:
-                    ul
-                      li We have been collecting a lot of feedback and data from the beta version.
-                      blockquote
-                        i
-                          | The metaphorical structure of the website i.e the concept of Rhizrs,
-                          | Roots, and Nodes is not very understandable to users.
-                      li
-                        | The next step is to analyze all the feedback we have got and revisit the designs and the
-                        | core idea of Rhizr.
-                      blockquote
-                        i
-                          | The ideas around &apos;curating&apos; and &apos;remixing&apos; are not very clear to users
-                          | and the functionality is also not very intuitive.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/rhizr_rhizr.jpg' alt='Rhizr View')
-                    h4.text-center
-                      | Viewing a &apos;Rhizr&apos;
-                      i.fa.fa-chevron-up
-              .modal-footer
-                ul.list-inline.item-details
-                  li
-                    | Project:&nbsp;
-                    strong Rhizr
-                button.btn.btn-default.btn-prev.viewEdLab(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-left.viewEdLab
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewMisc(type='button' title='Next Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-right.viewMisc
-                  |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
@@ -1607,11 +816,11 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalIntel')")
-                  i.fa.fa-angle-left.viewDell
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalIntel')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewEvolve(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
-                  i.fa.fa-angle-right.viewEvolve
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
+                  i.fa.fa-angle-right
                   |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
@@ -1811,12 +1020,12 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Vialogues
-                button.btn.btn-default.btn-prev.viewDell(type='button' title='Previous Project' onclick="showModal('modalIntel')")
-                  i.fa.fa-angle-left.viewDell
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalIntel')")
+                  i.fa.fa-angle-left
                   |  Prev
-                button.btn.btn-default.btn-next.viewEvolve(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
-                  i.fa.fa-angle-right.viewEvolve
-                  |                         Next
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalEvolveOutlet')")
+                  i.fa.fa-angle-right
+                  |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
@@ -1826,11 +1035,11 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
-                  i.fa.fa-angle-left.viewEvolve
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-right.viewRhizr
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalMisc')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
@@ -2038,262 +1247,12 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong EdLab Website
-                button.btn.btn-default.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
-                  i.fa.fa-angle-left.viewEvolve
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewRhizr(type='button' title='Next Project' onclick="showModal('modalMisc')")
-                  i.fa.fa-angle-right.viewRhizr
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalMisc')")
+                  i.fa.fa-angle-right
                   |  Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-
-        // **** Dell ****
-        #modalDell.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
-          .modal-content
-            .container-fluid
-              .nav-modal
-                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
-                  i.fa.fa-angle-left.viewIntel
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibApp')")
-                  i.fa.fa-angle-right.viewVialogues
-                  |                         Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-              .modal-body
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 Dell.com Redesign
-                    hr
-                    p.project-intro
-                      | Simplify Dell&apos;s homepage by restructuring the confusing main
-                      | navigation
-                      | and decluttering the landing page to enhance the shopping experience for visitors to the
-                      | site.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_final.jpg' alt='New dell.com')
-                    h4.text-center.color-gray-darker
-                      | New simplified homepage navigation
-                      i.fa.fa-chevron-up
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h3 The Project:
-                    p
-                      | Dell.com (in 2013) had multiple segments that forced users to self-identify their
-                      | segment before they could find and buy a product. I helped simplify the product browsing
-                      | and shopping experience for the millions of
-                      | (monthly) visitors on dell.com, by reducing the segments on Dell&apos;s main homepage from
-                      | five to two (&apos;For Home&apos; and &apos;For Work&apos;).
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_home_old.jpg' alt='Old dell.com')
-                    h4.text-center
-                      | Old landing page and its many segments
-                      i.fa.fa-chevron-up
-                    br
-                    blockquote
-                      i
-                        | Users felt the home page was cluttered and struggled to find the correct
-                        | place to start engaging with the navigation.
-                    br
-                    h3 My role:
-                    p
-                      | I worked closely with other experienced UX designers and
-                      | researchers on this project. I contributed to the ideation sessions, wireframing,
-                      | creating the hi-fidelity interactive prototypes in Axure, and finally consolidating the
-                      | remote test results (conducted on usertesting.com).
-                    br
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process (Highlights):
-                    hr
-                    ul
-                      li
-                        | RESEARCH
-                        ul
-                          li Brainstorming &amp; Ideation sessions
-                          li Evaluate Dell.com
-                      li
-                        | DESIGN AND PROTOTYPE
-                        ul
-                          li Wireframe
-                          li Prototype development
-                          li Remote usability testing
-                      li
-                        | DELIVERABLES
-                        ul
-                          li Recommendations
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 RESEARCH:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Evaluate existing homepage:
-                    ul
-                      li
-                        | We dug deeper into the multiple categories and sections on the homepage and the
-                        | design decisions behind them.
-                      li
-                        | There were 5 segments on the Dell.com homepage-
-                        ol
-                          li For Home
-                          li For Small Business &amp; Office
-                          li For Medium Business
-                          li For Education, Government &amp; Healthcare
-                          li For Large Enterprise
-                      blockquote
-                        i
-                          | The landing page reflected the internal organization structure as each
-                          | team wanted a piece of the pie, leading to an information architecture that did
-                          | not make any sense to customers.
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Project mission:
-                    ul
-                      li Simplify product offerings/catalog
-                      li Enable users to find what they are looking for faster and more easily
-                      li Appeal to a wider variety of shopping behaviors
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b User research input on what factors most people shop by?
-                    ul
-                      li
-                        b Price:&nbsp;
-                        | price range predetermined
-                      li
-                        b Form factor:&nbsp;
-                        | They already know they want a laptop, desktop, workstation or server
-                      li
-                        b Brand:&nbsp;
-                        | Familiarity with the franchise brand promise and features makes search easier
-                      li
-                        b Activity:&nbsp;
-                        | Searching for the optimum device to accomplish preferred tasks such as computing, blogging, photo and video editing
-                .row.portfolio-slide
-                  .col-lg-8.col-lg-offset-2
-                    h4 DESIGN + PROTOTYPE:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Information Architecture:
-                    p We brainstormed multiple ideas to improve the IA, and came up with a 3-pronged approach -
-                    ul
-                      li
-                        b Product Consolidation:&nbsp;
-                        | Too many products with similar names and slightly different specs confuses consumers and overwhelms navigation.
-                      li
-                        b Franchise Branding:&nbsp;
-                        | A focus on franchise branding, online and offline, gives customers a clearer understanding of our products and makes site search easier.
-                      li
-                        b De-segmentation:&nbsp;
-                        | Opportunity exists to reduce the level of segmentation on the site which adds unnecessary complexity.
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_wireframe.png' alt='Dell Wireframe')
-                    h4.text-center
-                      | Wireframing ideas for these approaches
-                      i.fa.fa-chevron-up
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_consolidated.jpg' alt='Initial Dell design')
-                    h4.text-center
-                      | Group by product type
-                      i.fa.fa-chevron-up
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_consolidated2.jpg' alt='Initial Dell design')
-                    h4.text-center
-                      | Group by franchise brand
-                      i.fa.fa-chevron-up
-                    br
-                    p
-                      b We then came up with 3 options under the 'desegmentation' approach -
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_1.jpg' alt='OPTION 1')
-                    h4.text-center
-                      | OPTION 1: Single-segment
-                      i.fa.fa-chevron-up
-                    br
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_2.jpg' alt='OPTION 2')
-                    h4.text-center
-                      | OPTION 2: Two main business segments
-                      i.fa.fa-chevron-up
-                    br
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_option_3.jpg' alt='OPTION 3')
-                    h4.text-center
-                      | OPTION 3: Partial Desgmentation
-                      i.fa.fa-chevron-up
-                    blockquote
-                      i
-                        | After some discussion and voting, we decided to test the desegmentation idea further.
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Testing:
-                    ul
-                      li I created hi-fi interactive mockups of the desegmentation options in Axure.
-                      li
-                        | The three options were tested against each other and existing Dell.com (control) structure.
-                      li
-                        | The users we recruited belonged to three categories - consumer, business, and
-                        | crossover.
-                      li We had 6 participants per option per category for a total of 72 participants.
-                      li Each participant had 7 browsing tasks and 4 follow-up survey questions.
-                    br
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Results and Learnings:
-                    ul
-                      li Consumer users favored Option 2 (For Home, For Work) the most.
-                      li
-                        | Crossover users also favored Option 2 (For Home, For Work) compared to other
-                        | options.
-                      li Consumer and Crossover users disliked the existing dell.com.
-                      blockquote
-                        i
-                          | Users felt the home page was cluttered and struggled to find the correct
-                          | place to start engaging with the navigation.
-                      li
-                        | Unlike others, Business users had the most success on the control (dell.com),
-                        | followed by Option 1 (Products).
-                      li
-                        | The study results support the hypothesis that desegmentation is the right direction.
-                      li
-                        | Overall, the most favored option was Option 2, or reducing to two segments - &apos;For
-                        | Home&apos; and &apos;For Work&apos;.
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 THE SOLUTION:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p
-                      | Desegmentation down to two segments (For Home and For Office) was implemented on Dell.com. Read Dell&apos;s&nbsp;
-                      a(target='_blank' href='https://blog.dell.com/en-us/making-dell-com-easier-are-you-buying-for-home-or-for-work/')
-                        | blog post
-                      |  for more details.
-                    blockquote
-                      i
-                        | Note: The Dell homepage has since been&nbsp;
-                        a(href='http://www.dell.com/en-us/' target='_blank') updated
-                        |  to Desegmentation Option 1 (only &apos;Products&apos;)
-              .modal-footer
-                ul.list-inline.item-details
-                  li
-                    | Project:&nbsp;
-                    strong Dell.com Redesign
-                button.btn.btn-default.btn-prev.viewIntel(type='button' title='Previous Project' onclick="showModal('modalJLR')")
-                  i.fa.fa-angle-left.viewIntel
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewVialogues(type='button' title='Next Project' onclick="showModal('modalLibApp')")
-                  i.fa.fa-angle-right.viewVialogues
-                  |                         Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
@@ -2303,12 +1262,12 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewVialogues(type='button' title='Previous Project' onclick="showModal('modalVialogues')")
-                  i.fa.fa-angle-left.viewVialogues
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewEdLab(type='button' title='Next Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-right.viewEdLab
-                  |                         Next
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalVialogues')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalEdLabWebsite')")
+                  i.fa.fa-angle-right
+                  |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
@@ -2456,12 +1415,12 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Evolve Outlet
-                button.btn.btn-default.btn-prev.viewVialogues(type='button' title='Previous Project' onclick="showModal('modalVialogues')")
-                  i.fa.fa-angle-left.viewVialogues
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewEdLab(type='button' title='Next Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-right.viewEdLab
-                  |                         Next
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalVialogues')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalEdLabWebsite')")
+                  i.fa.fa-angle-right
+                  |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
                   |  Close
@@ -2471,11 +1430,11 @@ html(lang='en')
           .modal-content
             .container-fluid
               .nav-modal
-                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-left.viewRhizr
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
-                  i.fa.fa-angle-right.viewLibWeb
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
@@ -2554,134 +1513,11 @@ html(lang='en')
                   li
                     | Project:&nbsp;
                     strong Miscellaneous
-                button.btn.btn-default.btn-prev.viewRhizr(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
-                  i.fa.fa-angle-left.viewRhizr
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewLibWeb(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
-                  i.fa.fa-angle-right.viewLibWeb
-                  |  Next
-                button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
-                  i.fa.fa-times
-                  |  Close
-
-        // **** Dell Personas ****
-        #modalDellPersona.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
-          .modal-content
-            .nav-modal
-              button.btn.btn-link.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
-                i.fa.fa-angle-left.viewEvolve
-              button.btn.btn-link(type='button' data-dismiss='modal' title='Back to all projects')
-                i.fa.fa-th-large
-              button.btn.btn-link.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
-                i.fa.fa-angle-right.viewLibApp
-            .container-fluid
-              .modal-body
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 Create Personas for Dell UX Team
-                    hr
-                    p.project-intro
-                      | The UI/UX design and development teams at Dell were using personas
-                      | created by the Marketing division, that were too general.
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h3 The project:
-                    p
-                      | The Global Site Design team was tasked with creating new personas and to understand our
-                      | customers by mapping the end-to-end user journey with a product from research to
-                      | purchase and beyond.
-                    br
-                    h3 My role:
-                    p
-                      | As a UX Architect intern, this was one of the projects I got to work on on the research
-                      | side. I worked closely with another UX Architect and a UX Lead.
-                    br
-                    h3 The Outcome:
-                    p
-                      | I helped lay the groundwork for the initial interviews, research and analysis that lead
-                      | to the creation of journey maps and eventually new personas.
-                .row.portfolio-header
-                  .col-lg-8.col-lg-offset-2
-                    h2 The Process (Highlights):
-                    hr
-                    ul
-                      li
-                        | STRATEGY
-                        ul
-                          li Ideation &amp; brainstorming
-                      li
-                        | RESEARCH
-                        ul
-                          li Interview planning
-                          li Conducting interviews
-                          li Journey mapping
-                      li
-                        | NEXT STEPS
-                        ul
-                          li Further analysis
-                .row.portfolio-slide.slide-break
-                  .col-lg-8.col-lg-offset-2
-                    h4 USER RESEARCH:
-                    hr
-                  .col-lg-8.col-lg-offset-2
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Determining User Needs / Interviews:
-                    ul
-                      li
-                        | I participated in the initial brainstorming sessions of the project to determine
-                        | project objectives.
-                      li Analyzed existing personas.
-                      li
-                        | I helped plan the interviews, prepare interview questions, recruit and interview
-                        | users from the &apos;consumer&apos; segment.
-                      li
-                        | We asked questions about the following customer journey steps
-                        ul
-                          li Identification of Need
-                          li Research
-                          li Purchase
-                          li Order Status
-                          li Out of Box Experience
-                          li Usage
-                          li Upgrade &amp; Accessorizing
-                          li Support
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Interview Analysis:
-                    ul
-                      li
-                        | The interviews were followed by interpretation sessions where we broke down the
-                        | interview notes and created affinity notes and consolidated them into an affinity
-                        | diagram/wall.
-                      li
-                        | Once we created the initial affinity wall, we had walk-through sessions with other
-                        | members of the UX team, to look for ideas and relations.
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    img.lazyload.img-responsive.img-centered(data-sizes='auto' data-src='dist/assets/images/work/dell_personas.jpg' alt='Affinity Wall')
-                    h4.text-center
-                      | Interview planning and results analysis
-                      i.fa.fa-chevron-up
-                  .col-lg-8.col-lg-offset-2
-                    br
-                    p.color-blue
-                      | &#x279D;&nbsp;
-                      b Next steps:
-                    p
-                      | The project was a longer-term project than my internship duration and continued beyond it
-                      | through more phases towards the generation of new personas.
-              .modal-footer
-                ul.list-inline.item-details
-                  li
-                    | Project:&nbsp;
-                    strong Dell Personas
-                button.btn.btn-default.btn-prev.viewEvolve(type='button' title='Previous Project' onclick="showModal('modalEvolveOutlet')")
-                  i.fa.fa-angle-left.viewEvolve
-                  |                         Prev
-                button.btn.btn-default.btn-next.viewLibApp(type='button' title='Next Project' onclick="showModal('modalLibApp')")
-                  i.fa.fa-angle-right.viewLibApp
+                button.btn.btn-default.btn-prev(type='button' title='Previous Project' onclick="showModal('modalEdLabWebsite')")
+                  i.fa.fa-angle-left
+                  |  Prev
+                button.btn.btn-default.btn-next(type='button' title='Next Project' onclick="showModal('modalLibWeb')")
+                  i.fa.fa-angle-right
                   |  Next
                 button.btn.btn-default(type='button' data-dismiss='modal' title='Back to all projects')
                   i.fa.fa-times
