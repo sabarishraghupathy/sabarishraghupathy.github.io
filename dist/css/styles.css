@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Freelancer v6.0.2 (https://startbootstrap.com/themes/freelancer)
-* Copyright 2013-2022 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
 */
 body {
@@ -564,4 +564,103 @@ div#maincontent {
 .flickr-photo {
   min-height: 350px;
   max-height: 450px;
+}
+
+/* ======================
+   Dark Mode
+   ====================== */
+html[data-theme=dark] body {
+  background-color: #141b24;
+  color: #cdd6e0;
+}
+html[data-theme=dark] header {
+  background: #1a2332;
+  color: #cdd6e0;
+}
+html[data-theme=dark] header .intro-text {
+  background: #1e2a3a;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+}
+html[data-theme=dark] header p {
+  color: #cdd6e0;
+}
+html[data-theme=dark] section.success {
+  background: #1a2332;
+  color: #cdd6e0;
+}
+html[data-theme=dark] section.success p,
+html[data-theme=dark] section.success li,
+html[data-theme=dark] section.success blockquote,
+html[data-theme=dark] section.success .fwl {
+  color: #cdd6e0;
+}
+html[data-theme=dark] section.success h3 {
+  color: #cdd6e0;
+}
+html[data-theme=dark] section.success blockquote {
+  color: #7a90a4;
+  border-left-color: #2d3f52;
+}
+html[data-theme=dark] #portfolio {
+  background-color: #141b24;
+}
+html[data-theme=dark] #portfolio .project-title {
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-modal .modal-content {
+  background-color: #141b24;
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-modal .modal-content p,
+html[data-theme=dark] .portfolio-modal .modal-content li {
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-modal .modal-content blockquote {
+  color: #7a90a4;
+  border-left-color: #2d3f52;
+}
+html[data-theme=dark] .portfolio-modal .modal-content .project-intro {
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-modal .modal-content h2,
+html[data-theme=dark] .portfolio-modal .modal-content h3,
+html[data-theme=dark] .portfolio-modal .modal-content h4 {
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-header {
+  background-color: #1e2a3a;
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-header h2 {
+  color: #4990E2;
+}
+html[data-theme=dark] .portfolio-header li {
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-slide {
+  background-color: #1a2332;
+}
+html[data-theme=dark] .container-fluid,
+html[data-theme=dark] .container-fullwidth {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+html[data-theme=dark] .portfolio-modal .btn-default {
+  background-color: #243350;
+  border-color: #2d3f52;
+  color: #cdd6e0;
+}
+html[data-theme=dark] .portfolio-modal .btn-default:hover, html[data-theme=dark] .portfolio-modal .btn-default:focus {
+  background-color: #4990E2;
+  border-color: #4990E2;
+  color: white;
+}
+html[data-theme=dark] .loading {
+  background-color: #141b24;
+}
+html[data-theme=dark] #contact {
+  background-color: #141b24;
+  color: #cdd6e0;
+}
+html[data-theme=dark] #theme-toggle i {
+  color: #f6c90e;
 }
