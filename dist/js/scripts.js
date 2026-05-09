@@ -1,12 +1,34 @@
 /*!
     * Start Bootstrap - Freelancer v6.0.2 (https://startbootstrap.com/themes/freelancer)
-    * Copyright 2013-2022 Start Bootstrap
+    * Copyright 2013-2026 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
     /* eslint-disable no-invalid-this */
 /* eslint-disable no-undef */
 /* eslint-disable require-jsdoc */
 // Freelancer Theme JavaScript
+
+// Dark/light mode toggle
+function updateThemeIcon(theme) {
+  const icon = document.querySelector('#theme-toggle i');
+  if (!icon) return;
+  icon.className = theme === 'dark' ? 'fa fa-sun-o' : 'fa fa-moon-o';
+}
+
+(function() {
+  // Sync icon with whatever the anti-FOUC script already set on <html>
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  updateThemeIcon(current);
+
+  document.getElementById('theme-toggle').addEventListener('click', function(e) {
+    e.preventDefault();
+    const next = (document.documentElement.getAttribute('data-theme') || 'light') === 'dark'
+      ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeIcon(next);
+  });
+})();
 
 function showModal(id) {
   $('.modal').modal('hide');
